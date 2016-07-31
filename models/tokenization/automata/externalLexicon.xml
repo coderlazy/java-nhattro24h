@@ -1,0 +1,2259 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<corpus id="resources/automata/externalLexicon.xml">
+    <body>
+		<w>this is an external word</w>
+		<w>Hà nội</w>
+		<w>Quốc lộ 32</w>
+	 <w>Tản Lĩnh</w>
+	 <w>Tỉnh Lộ 411C</w>
+	 <w>Tỉnh lộ 414</w>
+	 <w>Tỉnh lộ 84</w>
+	 <w>Tỉnh Lộ 87A</w>
+	 <w>Vĩnh Hằng</w>
+	 <w>đường 21</w>
+	 <w>đường 6</w>
+	 <w>Bắc Sơn</w>
+	 <w>Hồ Chí Minh</w>
+	 <w>Nguyễn Anh Trỗi</w>
+	 <w>Quốc lộ 21</w>
+	 <w>Quốc lộ 6</w>
+	 <w>Quốc Lộ 6A</w>
+	 <w>Tỉnh lộ 419</w>
+	 <w>Tỉnh lộ 424</w>
+	 <w>Tỉnh Lộ 80</w>
+	 <w>đường 20</w>
+	 <w>đường 21</w>
+	 <w>đường 5</w>
+	 <w>Ái Mộ</w>
+	 <w>An Đào</w>
+	 <w>An Lạc</w>
+	 <w>Bát Tràng</w>
+	 <w>Cầu Đuống</w>
+	 <w>Cầu Vượt Phú Thị</w>
+	 <w>Chính Trung</w>
+	 <w>Cổ Bi</w>
+	 <w>Cửu Việt</w>
+	 <w>Cửu Việt 1</w>
+	 <w>Cửu Việt 2</w>
+	 <w>Đa Tốn</w>
+	 <w>Đặng Phúc Thông</w>
+	 <w>Đào Nguyên</w>
+	 <w>Đình Xuyên</w>
+	 <w>Dương Quang</w>
+	 <w>Đường Y</w>
+	 <w>Giang Cao</w>
+	 <w>Hà Huy Tập</w>
+	 <w>Khiêu Năng Tĩnh</w>
+	 <w>Khiếu Năng Tĩnh</w>
+	 <w>Kiên Thành</w>
+	 <w>Kiêu Kỵ</w>
+	 <w>Kim Âu</w>
+	 <w>Kim Hồ</w>
+	 <w>Lê Công Miễn</w>
+	 <w>Lệ Mật</w>
+	 <w>Mai Phúc</w>
+	 <w>Ngô Xuân Quảng</w>
+	 <w>Ngọc Động</w>
+	 <w>Ngọc Lâm</w>
+	 <w>Ngọc Thụy</w>
+	 <w>Nguyễn Bình</w>
+	 <w>Nguyễn Đức Thuận</w>
+	 <w>Nguyễn Văn Linh</w>
+	 <w>đường Nha</w>
+	 <w>Ninh Hiệp</w>
+	 <w>Phạm Ngọc Thạch</w>
+	 <w>Phan Đăng Lưu</w>
+	 <w>Phú Gia</w>
+	 <w>Quốc lộ 1A</w>
+	 <w>Quốc lộ 3</w>
+	 <w>Quốc lộ 39B</w>
+	 <w>Quốc Lộ 5</w>
+	 <w>đường S</w>
+	 <w>đường T</w>
+	 <w>Thiên Đức</w>
+	 <w>Thượng Thanh</w>
+	 <w>Tỉnh lộ 179</w>
+	 <w>Tỉnh lộ 181</w>
+	 <w>Tỉnh lộ 270</w>
+	 <w>Tỉnh lộ 424</w>
+	 <w>Tỉnh lộ 84</w>
+	 <w>Trương Tấn Sang</w>
+	 <w>Võ Đình Tú</w>
+	 <w>Võ Trung Thành</w>
+	 <w>Ỷ Lan</w>
+	 <w>Yên Khê</w>
+	 <w>Yên Tân</w>
+	 <w>đường 422</w>
+	 <w>đường 70</w>
+	 <w>đường 72</w>
+	 <w>đường 79</w>
+	 <w>Đại lộ Thăng Long</w>
+	 <w>Đồng Nhân</w>
+	 <w>Lai Xá</w>
+	 <w>Láng Hòa Lạc</w>
+	 <w>Lê Trọng Tấn</w>
+	 <w>Quốc lộ 32</w>
+	 <w>Tỉnh Lộ 422B</w>
+	 <w>Yên Vĩnh</w>
+	 <w>đường 23</w>
+	 <w>đường 23B</w>
+	 <w>đường 353</w>
+	 <w>Bắc Thăng Long</w>
+	 <w>Bảo Việt</w>
+	 <w>Cao tốc Thăng Long Nội Bài</w>
+	 <w>Cây Xoài</w>
+	 <w>Hà Phong</w>
+	 <w>Hoa Bằng Lăng</w>
+	 <w>Hoa Điệp Vàng</w>
+	 <w>Hoa Ngọc Lan</w>
+	 <w>Long Việt</w>
+	 <w>Phố Yên</w>
+	 <w>Quang Minh</w>
+	 <w>Quốc lộ 23</w>
+	 <w>Quốc lộ 23B</w>
+	 <w>Quốc lộ 308</w>
+	 <w>Tỉnh lộ 301</w>
+	 <w>Tỉnh lộ 312</w>
+	 <w>Trung Sơn Trầm</w>
+	 <w>Vành Đai 4</w>
+	 <w>Võ Văn Kiệt</w>
+	 <w>Yên Nhân</w>
+	 <w>đường 1</w>
+	 <w>đường 73</w>
+	 <w>Liên Thông</w>
+	 <w>Quốc lộ 1A</w>
+	 <w>Truyền Thống</w>
+	 <w>Quốc lộ 32</w>
+	 <w>Tỉnh lộ 419</w>
+	 <w>đường 21</w>
+	 <w>đường 21A</w>
+	 <w>Đại lộ Thăng Long</w>
+	 <w>Đồng Bụt</w>
+	 <w>Đồng Lư</w>
+	 <w>Hồ Chí Minh</w>
+	 <w>Láng Hòa Lạc</w>
+	 <w>Quốc lộ 21A</w>
+	 <w>Quốc lộ 32</w>
+	 <w>Yên Quán</w>
+	 <w>đường 1</w>
+	 <w>đường 14</w>
+	 <w>đường 16</w>
+	 <w>đường 18</w>
+	 <w>đường 2</w>
+	 <w>đường 3</w>
+	 <w>đường 35</w>
+	 <w>Đa Phúc</w>
+	 <w>Đền Gióng</w>
+	 <w>Đồng Lai</w>
+	 <w>Đông Quan</w>
+	 <w>Kim Anh</w>
+	 <w>Miếu Thờ</w>
+	 <w>Núi Đôi</w>
+	 <w>Phù Mã</w>
+	 <w>Phú Tàng</w>
+	 <w>Quốc lộ 14</w>
+	 <w>Quốc lộ 16</w>
+	 <w>Quốc Lộ 2</w>
+	 <w>Quốc lộ 3</w>
+	 <w>Quốc Lộ 35</w>
+	 <w>Quốc lộ 71</w>
+	 <w>Tân Phú</w>
+	 <w>Tân Trại</w>
+	 <w>Thạch Lỗi</w>
+	 <w>Thân Nhân Trung</w>
+	 <w>Tỉnh lộ 131</w>
+	 <w>Tỉnh lộ 135</w>
+	 <w>Tỉnh lộ 270</w>
+	 <w>Tỉnh lộ 296</w>
+	 <w>Tỉnh Lộ 35</w>
+	 <w>đường 21</w>
+	 <w>đường 8/3</w>
+	 <w>đường 84</w>
+	 <w>Cần Thơ</w>
+	 <w>Đại lộ Thăng Long</w>
+	 <w>Đồng Vàng</w>
+	 <w>Quốc lộ 21A</w>
+	 <w>Tỉnh lộ 419</w>
+	 <w>Tỉnh lộ 84</w>
+	 <w>đường 21B</w>
+	 <w>Quốc lộ 21B</w>
+	 <w>Quốc lộ 71</w>
+	 <w>đường Ga</w>
+	 <w>Liên Thôn</w>
+	 <w>Liễu Ngoại</w>
+	 <w>Nguyễn Tuấn Trình</w>
+	 <w>Quốc lộ 1A</w>
+	 <w>Quốc lộ 1B</w>
+	 <w>Quốc lộ 71</w>
+	 <w>Quốc Lộ 71A</w>
+	 <w>đường Tía</w>
+	 <w>TL 427</w>
+	 <w>đường Vôi</w>
+	 <w>đường 60</w>
+	 <w>Nguyễn Huệ</w>
+	 <w>Quốc lộ 60</w>
+	 <w>Tỉnh lộ 883</w>
+	 <w>Tỉnh lộ 884</w>
+	 <w>Tỉnh lộ 886</w>
+	 <w>đường 32</w>
+	 <w>đường 69</w>
+	 <w>An Dương Vương</w>
+	 <w>Cầu Diễn</w>
+	 <w>Cầu Vồng</w>
+	 <w>Cổ Nhuế</w>
+	 <w>Điện Cơ</w>
+	 <w>Đình Quán</w>
+	 <w>Đỗ Nhuận</w>
+	 <w>Đông Ngạc</w>
+	 <w>Đức Diễn</w>
+	 <w>Hồ Tùng Mậu</w>
+	 <w>Hoàng Công Chất</w>
+	 <w>Hoàng Quốc Việt</w>
+	 <w>Hoàng Tăng Bí</w>
+	 <w>đường K1B</w>
+	 <w>đường K4</w>
+	 <w>Kẻ Vẽ</w>
+	 <w>Kiều Mai</w>
+	 <w>Lê Văn Hiến</w>
+	 <w>Lê Văn Lương</w>
+	 <w>Liên Mạc</w>
+	 <w>Nguyễn Hoàng Tôn</w>
+	 <w>Nguyên Xá</w>
+	 <w>Nhật Tảo</w>
+	 <w>Phạm Tuấn Tài</w>
+	 <w>Phạm Văn Đồng</w>
+	 <w>Phan Bá Vành</w>
+	 <w>Phú Diễn</w>
+	 <w>Phú Kiều</w>
+	 <w>Phúc Diễn</w>
+	 <w>Quốc lộ 32</w>
+	 <w>Sông Nhuệ</w>
+	 <w>Tân Nhuệ</w>
+	 <w>Tân Phong</w>
+	 <w>Tân Xuân</w>
+	 <w>Tăng Thiết Giáp</w>
+	 <w>Tây Tựu</w>
+	 <w>Thượng Cát</w>
+	 <w>Thụy Phương</w>
+	 <w>Trần Cung</w>
+	 <w>Văn Tiến Dũng</w>
+	 <w>Vân Trì</w>
+	 <w>Văn Trì</w>
+	 <w>Võ Qúy Huân</w>
+	 <w>Xuân Đỉnh</w>
+	 <w>Xuân La</w>
+	 <w>Yên Nội</w>
+	 <w>Lê Lợi</w>
+	 <w>Nguyễn Công Trứ</w>
+	 <w>Nguyễn Thượng Hiền</w>
+	 <w>Quang Trung</w>
+	 <w>Quốc lộ 21</w>
+	 <w>Thôn Thanh Ấm</w>
+	 <w>Tỉnh lộ 424</w>
+	 <w>Tô Hiệu</w>
+	 <w>Trần Đăng Ninh</w>
+	 <w>Văn Phú</w>
+	 <w>Gò Mèo</w>
+	 <w>Nguyễn Thái Học</w>
+	 <w>Phan Đình Phùng</w>
+	 <w>Phùng Hưng</w>
+	 <w>Phượng Trì</w>
+	 <w>Quốc lộ 32</w>
+	 <w>Thụy Ứng</w>
+	 <w>đường 19</w>
+	 <w>đường 23</w>
+	 <w>đường 23B</w>
+	 <w>đường 3</w>
+	 <w>đường 5</w>
+	 <w>đường 72</w>
+	 <w>Bắc Hà</w>
+	 <w>Bắc Hồng</w>
+	 <w>Bắc Thăng Long</w>
+	 <w>Bích Phượng</w>
+	 <w>Cao Lỗ</w>
+	 <w>Cao tốc Nhật Tân Nội Bài</w>
+	 <w>Cao tốc Thăng Long Nội Bài</w>
+	 <w>Cầu Lớn-Nam Hồng</w>
+	 <w>Cổ Loa</w>
+	 <w>Cổ Nhuế</w>
+	 <w>Cửa Hàng Mới</w>
+	 <w>Đa Lộc</w>
+	 <w>Đài Bi</w>
+	 <w>Đản Dị</w>
+	 <w>Đào Cam Mộc</w>
+	 <w>Đào Duy Từ</w>
+	 <w>Đào Duy Tùng</w>
+	 <w>Đông Hội</w>
+	 <w>Ga Đông Anh</w>
+	 <w>Giầy Da</w>
+	 <w>Hải Bối</w>
+	 <w>Kinh Bắc 1</w>
+	 <w>Lâm Tiên</w>
+	 <w>Lê Hữu Tựu</w>
+	 <w>Liên Xã</w>
+	 <w>Lò Vôi</w>
+	 <w>Lộc Hà</w>
+	 <w>Ngọc Chi</w>
+	 <w>Ngọc Giang</w>
+	 <w>Phan Xá</w>
+	 <w>Pháp Vân</w>
+	 <w>Phù Dung</w>
+	 <w>Phương Trạch</w>
+	 <w>Quốc lộ 23B</w>
+	 <w>Quốc lộ 3</w>
+	 <w>Sáp Mai</w>
+	 <w>Tân Trang</w>
+	 <w>Thiên Biều</w>
+	 <w>Thiên Phước</w>
+	 <w>Thiết Bị Điện</w>
+	 <w>Thôn Đìa-Nam Hồng</w>
+	 <w>Thụy Lâm</w>
+	 <w>Vân Trì</w>
+	 <w>Võ Nguyên Giáp</w>
+	 <w>An Xá</w>
+	 <w>Bà Huyện Thanh Quan</w>
+	 <w>Bắc Sơn</w>
+	 <w>Bưởi</w>
+	 <w>Cao Bá Quát</w>
+	 <w>Cầu Giấy</w>
+	 <w>Châu Long</w>
+	 <w>Chu Văn An</w>
+	 <w>Chùa Một Cột</w>
+	 <w>Cơ Xá</w>
+	 <w>Cửa Bắc</w>
+	 <w>Cửa Đông</w>
+	 <w>Cửa Nam</w>
+	 <w>Đại Yên</w>
+	 <w>Đặng Dung</w>
+	 <w>Đặng Tất</w>
+	 <w>Đào Tấn</w>
+	 <w>Đê La Thành</w>
+	 <w>Điện Biên Phủ</w>
+	 <w>Độc Lập</w>
+	 <w>Đốc Ngữ</w>
+	 <w>Đội Cấn</w>
+	 <w>Đội Nhân</w>
+	 <w>Dương Đức Hiền</w>
+	 <w>Giang Văn Minh</w>
+	 <w>Giảng Võ</w>
+	 <w>Hàng Bún</w>
+	 <w>Hàng Dầu</w>
+	 <w>Hàng Than</w>
+	 <w>Hoàng Diệu</w>
+	 <w>Hoàng Hoa Thám</w>
+	 <w>Hoàng Văn Thụ</w>
+	 <w>Hòe Nhai</w>
+	 <w>Hồng Hà</w>
+	 <w>Hồng Phúc</w>
+	 <w>Hùng Vương</w>
+	 <w>Huyện Thanh Quan</w>
+	 <w>Huỳnh Thúc Kháng</w>
+	 <w>Khu tập thể Thành Công</w>
+	 <w>Khúc Hạo</w>
+	 <w>Kim Mã</w>
+	 <w>Kim Mã Thượng</w>
+	 <w>Lạc Chính</w>
+	 <w>Láng Hạ</w>
+	 <w>Lê Duẩn</w>
+	 <w>Lê Hồng Phong</w>
+	 <w>Lê Trực</w>
+	 <w>Liễu Giai</w>
+	 <w>Linh Lang</w>
+	 <w>Mạc Đĩnh Chi</w>
+	 <w>Nam Cao</w>
+	 <w>Nam Tràng</w>
+	 <w>Nghĩa Dũng</w>
+	 <w>Ngô Gia Tự</w>
+	 <w>Ngọc Hà</w>
+	 <w>Ngọc Khánh</w>
+	 <w>Ngũ Xã</w>
+	 <w>Nguyễn Biểu</w>
+	 <w>Nguyễn Cảnh Chân</w>
+	 <w>Nguyễn Chí Thanh</w>
+	 <w>Nguyễn Công Hoan</w>
+	 <w>Nguyên Hồng</w>
+	 <w>Nguyễn Huy Thông</w>
+	 <w>Nguyễn Khắc Hiếu</w>
+	 <w>Nguyễn Khắc Nhu</w>
+	 <w>Nguyễn Phạm Tuân</w>
+	 <w>Nguyễn Thái Học</w>
+	 <w>Nguyễn Thiệp</w>
+	 <w>Nguyễn Tri Phương</w>
+	 <w>Nguyễn Trung Trực</w>
+	 <w>Nguyễn Trường Tộ</w>
+	 <w>Nguyễn Văn Ngọc</w>
+	 <w>Núi Trúc</w>
+	 <w>Ông Ích Khiêm</w>
+	 <w>Phạm Hồng Thái</w>
+	 <w>Phạm Huy Thông</w>
+	 <w>Phan Chu Trinh</w>
+	 <w>Phan Đình Phùng</w>
+	 <w>Phan Huy Ích</w>
+	 <w>Phan Kế Bính</w>
+	 <w>Phó Đức Chính</w>
+	 <w>Phúc Xá</w>
+	 <w>Quần Ngựa</w>
+	 <w>Quán Thánh</w>
+	 <w>Sơn Tây</w>
+	 <w>Tân Ấp</w>
+	 <w>Thanh Bảo</w>
+	 <w>Thành Công</w>
+	 <w>Thành Công</w>
+	 <w>Thành Công Bắc</w>
+	 <w>Thanh Niên</w>
+	 <w>Tôn Thất Đạm</w>
+	 <w>Tôn Thất Thiệp</w>
+	 <w>Trần Huy Liệu</w>
+	 <w>Trần Phú</w>
+	 <w>Trần Tế Xương</w>
+	 <w>Trấn Vũ</w>
+	 <w>Trịnh Hoài Đức</w>
+	 <w>Trúc Bạch</w>
+	 <w>Vạn Bảo</w>
+	 <w>Văn Cao</w>
+	 <w>Vạn Phúc</w>
+	 <w>Vĩnh Phúc</w>
+	 <w>Vũ Thạnh</w>
+	 <w>Yên Ninh</w>
+	 <w>Yên Phụ</w>
+	 <w>Yên Thế</w>
+	 <w>Bảo Tháp</w>
+	 <w>Bờ Sông</w>
+	 <w>Bưởi</w>
+	 <w>Cầu Giấy</w>
+	 <w>Cầu vượt Mai Dịch</w>
+	 <w>Chùa Hà</w>
+	 <w>Cốm Vòng</w>
+	 <w>Đặng Thùy Trâm</w>
+	 <w>Dịch Vọng</w>
+	 <w>Dịch Vọng Hậu</w>
+	 <w>Điện Biên 1</w>
+	 <w>Đỗ Quang</w>
+	 <w>Doãn Kế Thiện</w>
+	 <w>Đồng Bông</w>
+	 <w>Đông Quan</w>
+	 <w>Dương Đình Nghệ</w>
+	 <w>Dương Quảng Hàm</w>
+	 <w>Duy Tân</w>
+	 <w>Hàm Nghi</w>
+	 <w>Hồ Tùng Mậu</w>
+	 <w>Hoa Bằng</w>
+	 <w>Hoàng Đạo Thúy</w>
+	 <w>Hoàng Minh Giám</w>
+	 <w>Hoàng Ngân</w>
+	 <w>Hoàng Quốc Việt</w>
+	 <w>Hoàng Sâm</w>
+	 <w>Hùng Vương</w>
+	 <w>K800A</w>
+	 <w>Khuất Duy Tiến</w>
+	 <w>Lạc Long Quân</w>
+	 <w>Láng</w>
+	 <w>Láng Hòa Lạc</w>
+	 <w>Lê Đức Thọ</w>
+	 <w>Lê Văn Lương</w>
+	 <w>Mai Dịch</w>
+	 <w>Nam Trung Yên</w>
+	 <w>Nghĩa Tân</w>
+	 <w>Nguyễn Chánh</w>
+	 <w>Nguyễn Cơ Thạch</w>
+	 <w>Nguyễn Đình Hoàn</w>
+	 <w>Nguyễn Đổng Chi</w>
+	 <w>Nguyễn Khả Trạc</w>
+	 <w>Nguyễn Khang</w>
+	 <w>Nguyễn Khánh Toàn</w>
+	 <w>Nguyễn Ngọc Vũ</w>
+	 <w>Nguyễn Phong Sắc</w>
+	 <w>Nguyễn Thị Định</w>
+	 <w>Nguyễn Thị Thập</w>
+	 <w>Nguyễn Văn Huyên</w>
+	 <w>Nhật Tân</w>
+	 <w>Phạm Hùng</w>
+	 <w>Phạm Nhật Duật</w>
+	 <w>Phạm Thận Duật</w>
+	 <w>Phạm Tuấn Tài</w>
+	 <w>Phạm Văn Đồng</w>
+	 <w>Phan Văn Trường</w>
+	 <w>Phùng Chí Kiên</w>
+	 <w>Quan Hoa</w>
+	 <w>Quan Nhân</w>
+	 <w>Thành Thái</w>
+	 <w>Tô Hiệu</w>
+	 <w>Tôn Thất Thuyết</w>
+	 <w>Trần Bình</w>
+	 <w>Trần Cung</w>
+	 <w>Trần Đăng Ninh</w>
+	 <w>Trần Duy Hưng</w>
+	 <w>Trần Kim Xuyến</w>
+	 <w>Trần Quốc Hoàn</w>
+	 <w>Trần Quý Kiên</w>
+	 <w>Trần Thái Tông</w>
+	 <w>Trần Tử Bình</w>
+	 <w>Trần Vĩ</w>
+	 <w>Trần Vỹ</w>
+	 <w>Tràng Hào</w>
+	 <w>Tràng Hòa</w>
+	 <w>Trung Hòa</w>
+	 <w>Trung Kính</w>
+	 <w>Trung Yên</w>
+	 <w>Trung Yên 1</w>
+	 <w>Trung Yên 10</w>
+	 <w>Trung Yên 10A</w>
+	 <w>Trung Yên 10B</w>
+	 <w>Trung Yên 11</w>
+	 <w>Trung Yên 11A</w>
+	 <w>Trung Yên 11B</w>
+	 <w>Trung Yên 11C</w>
+	 <w>Trung Yên 12</w>
+	 <w>Trung Yên 13</w>
+	 <w>Trung Yên 14</w>
+	 <w>Trung Yên 14A</w>
+	 <w>Trung Yên 14B</w>
+	 <w>Trung Yên 15</w>
+	 <w>Trung Yên 15A</w>
+	 <w>Trung Yên 15B</w>
+	 <w>Trung Yên 15C</w>
+	 <w>Trung Yên 15D</w>
+	 <w>Trung Yên 2</w>
+	 <w>Trung Yên 3</w>
+	 <w>Trung Yên 4</w>
+	 <w>Trung Yên 5</w>
+	 <w>Trung Yên 6</w>
+	 <w>Trung Yên 7</w>
+	 <w>Trung Yên 8</w>
+	 <w>Trung Yên 9</w>
+	 <w>Trung Yên 9A</w>
+	 <w>Tuổi Trẻ</w>
+	 <w>Võ Qúy Huân</w>
+	 <w>Vũ Phạm Hàm</w>
+	 <w>Xuân Thủy</w>
+	 <w>Yên Hòa</w>
+	 <w>đường 1</w>
+	 <w>đường 19/5</w>
+	 <w>đường 21B</w>
+	 <w>đường 47</w>
+	 <w>đường 50</w>
+	 <w>đường 6</w>
+	 <w>đường 66</w>
+	 <w>đường 70</w>
+	 <w>đường 72</w>
+	 <w>An Hòa</w>
+	 <w>An Phú Đông 27</w>
+	 <w>An Thắng</w>
+	 <w>Ao Sen</w>
+	 <w>Ba La</w>
+	 <w>Bà Triệu</w>
+	 <w>Bạch Đằng</w>
+	 <w>Bạch Thái Bưởi</w>
+	 <w>Bế Văn Đàn</w>
+	 <w>Bích Câu</w>
+	 <w>Bùi Bằng Đoàn</w>
+	 <w>Bùi Thị Cúc</w>
+	 <w>Cao Thắng</w>
+	 <w>Cầu Am</w>
+	 <w>Cầu Bươu</w>
+	 <w>Cầu Đơ</w>
+	 <w>Cầu Đơ 4</w>
+	 <w>Chiến Thắng</w>
+	 <w>Chu Văn An</w>
+	 <w>Cửa Phủ</w>
+	 <w>Đa Sĩ</w>
+	 <w>Đại An</w>
+	 <w>Đinh Tiên Hoàng</w>
+	 <w>Do Lộ</w>
+	 <w>Đông Hưng Thuận 6</w>
+	 <w>Giang Chính</w>
+	 <w>Giếng Sen</w>
+	 <w>Hà Cầu</w>
+	 <w>Hà Trì</w>
+	 <w>Hà Trì 1</w>
+	 <w>Hà Trì 3</w>
+	 <w>Hà Trì 4</w>
+	 <w>Hà Trì 5</w>
+	 <w>Hàn Giang</w>
+	 <w>Hạnh Phúc</w>
+	 <w>Hậu Lân</w>
+	 <w>Hiệp Thành 13</w>
+	 <w>Hoàng Diệu</w>
+	 <w>Hoàng Hoa Thám</w>
+	 <w>Hoàng Văn Thụ</w>
+	 <w>Huyền Kỳ</w>
+	 <w>Huỳnh Thúc Kháng</w>
+	 <w>Kiến Hưng</w>
+	 <w>La Dương</w>
+	 <w>Lê Hồng Phong</w>
+	 <w>Lê Lai</w>
+	 <w>Lê Lợi</w>
+	 <w>Lê Quý Đôn</w>
+	 <w>Lê Trọng Tấn</w>
+	 <w>Lê Văn Lương</w>
+	 <w>Lộc Hòa</w>
+	 <w>Lương Ngọc Quyến</w>
+	 <w>Lương Văn Can</w>
+	 <w>Lý Ông Trọng</w>
+	 <w>Lý Thường Kiệt</w>
+	 <w>Lý Tự Trọng</w>
+	 <w>Mậu Lương</w>
+	 <w>Minh Khai</w>
+	 <w>Mỗ Lao</w>
+	 <w>Mương Khai</w>
+	 <w>Nam Cường</w>
+	 <w>Ngô Gia Khảm</w>
+	 <w>Ngô Gia Tự</w>
+	 <w>Ngô Quyền</w>
+	 <w>Ngô Thì Nhậm</w>
+	 <w>Ngô Thì Sỹ</w>
+	 <w>Nguyễn Chánh</w>
+	 <w>Nguyễn Công Trứ</w>
+	 <w>Nguyễn Hữu Nghĩa</w>
+	 <w>Nguyễn Huy Chương</w>
+	 <w>Nguyễn Khanh</w>
+	 <w>Nguyễn Khuyến</w>
+	 <w>Nguyễn Thái Học</w>
+	 <w>Nguyễn Thượng Hiền</w>
+	 <w>Nguyễn Trãi</w>
+	 <w>Nguyễn Trực</w>
+	 <w>Nguyễn Văn Lộc</w>
+	 <w>Nguyễn Văn Trỗi</w>
+	 <w>Nguyễn Viết Xuân</w>
+	 <w>Nhơn Trạch</w>
+	 <w>Nhuệ Giang</w>
+	 <w>Núi Một</w>
+	 <w>Phan Chu Trinh</w>
+	 <w>Phan Đình Giót</w>
+	 <w>Phan Đình Phùng</w>
+	 <w>Phan Huy Chú</w>
+	 <w>Phan Trọng Tuệ</w>
+	 <w>Phú Trung</w>
+	 <w>Phúc Thịnh</w>
+	 <w>Phùng Hưng</w>
+	 <w>Phượng Bãi</w>
+	 <w>Quan Thôn</w>
+	 <w>Quang Lãm</w>
+	 <w>Quang Trung</w>
+	 <w>Quốc lộ 21B</w>
+	 <w>Quốc lộ 6</w>
+	 <w>Quốc lộ 70</w>
+	 <w>Sông Nhuệ</w>
+	 <w>Tân Chánh Hiệp 16</w>
+	 <w>Tản Đà</w>
+	 <w>Tân Thới Hiệp 10</w>
+	 <w>Tây Sơn</w>
+	 <w>Thanh Bình</w>
+	 <w>Thanh Lâm</w>
+	 <w>Thanh Lãm</w>
+	 <w>Thạnh Lộc 27</w>
+	 <w>Thạnh Xuân 13</w>
+	 <w>Thạnh Xuân 21</w>
+	 <w>Tô Hiến Thành</w>
+	 <w>Tô Hiệu</w>
+	 <w>Tố Hữu</w>
+	 <w>Trại Gà</w>
+	 <w>Trần Đăng Ninh</w>
+	 <w>Trần Hưng Đạo</w>
+	 <w>Trần Nhật Duật</w>
+	 <w>Trần Phú</w>
+	 <w>Trần Quang Đạo</w>
+	 <w>Trần Văn Chuông</w>
+	 <w>Trích Sài</w>
+	 <w>Trinh Lương</w>
+	 <w>Trung Kiên</w>
+	 <w>Trưng Nhị</w>
+	 <w>Trưng Trắc</w>
+	 <w>Trương Công Định</w>
+	 <w>Trương Văn Đa</w>
+	 <w>Văn La</w>
+	 <w>Văn Nội</w>
+	 <w>Văn Phú</w>
+	 <w>Vạn Phúc</w>
+	 <w>Văn Quán</w>
+	 <w>Văn Yên</w>
+	 <w>Xa La</w>
+	 <w>Xốm</w>
+	 <w>Ỷ La</w>
+	 <w>Y Sơn</w>
+	 <w>Yên Bình</w>
+	 <w>Yên Lộ</w>
+	 <w>Yên Phúc</w>
+	 <w>Yên Xá</w>
+	 <w>Yết Kiêu</w>
+	 <w>đường 8/3</w>
+	 <w>Ao Dài</w>
+	 <w>Bà Triệu</w>
+	 <w>Bạch Đằng</w>
+	 <w>Bạch Mai</w>
+	 <w>Bùi Ngọc Dương</w>
+	 <w>Bùi Thị Xuân</w>
+	 <w>Cảm Hội</w>
+	 <w>Cao Đạt</w>
+	 <w>Cầu Lạc Trung</w>
+	 <w>Cầu Vĩnh Tuy</w>
+	 <w>Chùa Vua</w>
+	 <w>Đại Cồ Việt</w>
+	 <w>Đại La</w>
+	 <w>Đầm Trấu</w>
+	 <w>Đê Tô Hoàng</w>
+	 <w>Đê Trần Khát Chân</w>
+	 <w>Đỗ Hành</w>
+	 <w>Đỗ Ngọc Du</w>
+	 <w>Đỗ Thuận</w>
+	 <w>Đoàn Trần Nghiệp</w>
+	 <w>Dốc Thọ Lão</w>
+	 <w>Dốc Vạn Kiếp</w>
+	 <w>Đội Cung</w>
+	 <w>Đông Mác</w>
+	 <w>Đồng Nhân</w>
+	 <w>Giải Phóng</w>
+	 <w>Gốc Đề</w>
+	 <w>Hàm Long</w>
+	 <w>Hàn Thuyên</w>
+	 <w>Hàng Bài</w>
+	 <w>Hàng Chuối</w>
+	 <w>Hồ Ba Mẫu</w>
+	 <w>Hồ Đình</w>
+	 <w>Hồ Đình B</w>
+	 <w>Hồ Xuân Hương</w>
+	 <w>Hoà Bình 4</w>
+	 <w>Hoà Bình 6</w>
+	 <w>Hoà Bình 7</w>
+	 <w>Hoa Lư</w>
+	 <w>Hòa Mã</w>
+	 <w>Hoàng Mai</w>
+	 <w>Hồng Mai</w>
+	 <w>Hương Viên</w>
+	 <w>Kim Đồng</w>
+	 <w>Kim Ngưu</w>
+	 <w>Lạc Trung</w>
+	 <w>Lãng Yên</w>
+	 <w>Lê Đại Hành</w>
+	 <w>Lê Duẩn</w>
+	 <w>Lê Gia Định</w>
+	 <w>Lê Ngọc Hân</w>
+	 <w>Lê Phụng Hiểu</w>
+	 <w>Lê Quý Đôn</w>
+	 <w>Lê Thanh Nghị</w>
+	 <w>Lê Văn Hưu</w>
+	 <w>Lò Đúc</w>
+	 <w>Lương Yên</w>
+	 <w>Lý Thường Kiệt</w>
+	 <w>Mạc Thị Bưởi</w>
+	 <w>Mai Hắc Đế</w>
+	 <w>Mai Hương</w>
+	 <w>Minh Khai</w>
+	 <w>Nam Dư</w>
+	 <w>Ngô Thì Nhậm</w>
+	 <w>Nguyễn An Ninh</w>
+	 <w>Nguyễn Bỉnh Khiêm</w>
+	 <w>Nguyễn Cao</w>
+	 <w>Nguyễn Công Trứ</w>
+	 <w>Nguyễn Đình Chiểu</w>
+	 <w>Nguyễn Du</w>
+	 <w>Nguyễn Hiền</w>
+	 <w>Nguyễn Hữu Nghĩa</w>
+	 <w>Nguyễn Huy Tự</w>
+	 <w>Nguyễn Khoái</w>
+	 <w>Nguyễn Quyền</w>
+	 <w>Nguyễn Thượng Hiền</w>
+	 <w>Phạm Đình Hổ</w>
+	 <w>Phạm Ngũ Lão</w>
+	 <w>Phan Chu Trinh</w>
+	 <w>Phố Huế</w>
+	 <w>Phố Vọng</w>
+	 <w>Phù Đổng Thiên Vương</w>
+	 <w>Phù Đổng Thiên Vương</w>
+	 <w>Phùng Khắc Khoan</w>
+	 <w>Phương Mai</w>
+	 <w>Quang Trung</w>
+	 <w>Quỳnh Lôi</w>
+	 <w>Quỳnh Mai</w>
+	 <w>Tạ Quang Bửu</w>
+	 <w>Tam Trinh</w>
+	 <w>Tân Lạc</w>
+	 <w>Tăng Bạt Hổ</w>
+	 <w>Tây Kết</w>
+	 <w>Thái Phiên</w>
+	 <w>Thanh Nhàn</w>
+	 <w>Thể Giao</w>
+	 <w>Thi Sách</w>
+	 <w>Thiền Quang</w>
+	 <w>Thịnh Yên</w>
+	 <w>Thọ Lão</w>
+	 <w>Tô Hiến Thành</w>
+	 <w>Trần Bình Trọng</w>
+	 <w>Trần Cao Vân</w>
+	 <w>Trần Đại Nghĩa</w>
+	 <w>Trần Hưng Đạo</w>
+	 <w>Trần Khánh Dư</w>
+	 <w>Trần Khát Chân</w>
+	 <w>Trần Nhân Tông</w>
+	 <w>Trần Thánh Tông</w>
+	 <w>Trần Xuân Soạn</w>
+	 <w>Triệu Việt Vương</w>
+	 <w>Trương Định</w>
+	 <w>Tuệ Tĩnh</w>
+	 <w>Tương Mai</w>
+	 <w>Vân Đồn</w>
+	 <w>Vân Hồ</w>
+	 <w>Vân Hồ 2</w>
+	 <w>Vân Hồ I</w>
+	 <w>Vân Hồ III</w>
+	 <w>Vạn Kiếp</w>
+	 <w>Vĩnh Tuy</w>
+	 <w>Võ Thị Sáu</w>
+	 <w>Vũ Hữu Lợi</w>
+	 <w>Y.E.C Xanh</w>
+	 <w>Yên Bái 1</w>
+	 <w>Yên Bái 2</w>
+	 <w>Yên Lạc</w>
+	 <w>Yết Kiêu</w>
+	 <w>19/12</w>
+	 <w>đường 45</w>
+	 <w>An Xá</w>
+	 <w>Ấu Triệu</w>
+	 <w>Bà Triệu</w>
+	 <w>Bạch Đằng</w>
+	 <w>Bảo Khánh</w>
+	 <w>Bảo Linh</w>
+	 <w>Bát Đàn</w>
+	 <w>Bát Sứ</w>
+	 <w>Cấm Chỉ</w>
+	 <w>Cao Thắng</w>
+	 <w>Cầu Chương Dương</w>
+	 <w>Cầu Đất</w>
+	 <w>Cầu Đông</w>
+	 <w>Cầu Gỗ</w>
+	 <w>Cầu Long Biên</w>
+	 <w>Cầu Thê Húc</w>
+	 <w>Chả Cá</w>
+	 <w>Chân Cầm</w>
+	 <w>Chiến Thắng</w>
+	 <w>Chợ Gạo</w>
+	 <w>Chương Dương</w>
+	 <w>Chương Dương Độ</w>
+	 <w>Cổ Tân</w>
+	 <w>Cổng Đục</w>
+	 <w>Công Nghiệp 6</w>
+	 <w>Cửa Đông</w>
+	 <w>Cửa Nam</w>
+	 <w>Dã Tượng</w>
+	 <w>đường Dal</w>
+	 <w>Dal 22/12</w>
+	 <w>Dal 27/7</w>
+	 <w>Đặng Thái Thân</w>
+	 <w>Đào Duy Từ</w>
+	 <w>Điện Biên</w>
+	 <w>Điện Biên Phủ</w>
+	 <w>Đinh Công Tráng</w>
+	 <w>Đinh Lễ</w>
+	 <w>Đinh Liệt</w>
+	 <w>Đình Ngang</w>
+	 <w>Đinh Tiên Hoàng</w>
+	 <w>Đông Thái</w>
+	 <w>Đồng Xuân</w>
+	 <w>Đường Thành</w>
+	 <w>Gầm Cầu</w>
+	 <w>Gia Ngư</w>
+	 <w>Hạ Hồi</w>
+	 <w>Hà Trung</w>
+	 <w>Hai Bà Trưng</w>
+	 <w>Hàm Long</w>
+	 <w>Hàm Tử Quan</w>
+	 <w>Hàng Bạc</w>
+	 <w>Hàng Bài</w>
+	 <w>Hàng Bè</w>
+	 <w>Hàng Bồ</w>
+	 <w>Hàng Bông</w>
+	 <w>Hàng Buồm</w>
+	 <w>Hàng Bút</w>
+	 <w>Hàng Cá</w>
+	 <w>Hàng Cân</w>
+	 <w>Hàng Chai</w>
+	 <w>Hàng Chiếu</w>
+	 <w>Hàng Chĩnh</w>
+	 <w>Hàng Chuối</w>
+	 <w>Hàng Cót</w>
+	 <w>Hàng Da</w>
+	 <w>Hàng Đào</w>
+	 <w>Hàng Dầu</w>
+	 <w>Hàng Đậu</w>
+	 <w>Hàng Điếu</w>
+	 <w>Hàng Đồng</w>
+	 <w>Hàng Đường</w>
+	 <w>Hàng Gà</w>
+	 <w>Hàng Gai</w>
+	 <w>Hàng Giấy</w>
+	 <w>Hàng Giầy</w>
+	 <w>Hàng Hành</w>
+	 <w>Hàng Hòm</w>
+	 <w>Hàng Hương</w>
+	 <w>Hàng Khay</w>
+	 <w>Hàng Khoai</w>
+	 <w>Hàng Lược</w>
+	 <w>Hàng Mã</w>
+	 <w>Hàng Mắm</w>
+	 <w>Hàng Mành</w>
+	 <w>Hàng Muối</w>
+	 <w>Hàng Ngang</w>
+	 <w>Hàng Nón</w>
+	 <w>Hàng Phèn</w>
+	 <w>Hàng Quạt</w>
+	 <w>Hàng Rươi</w>
+	 <w>Hàng Than</w>
+	 <w>Hàng Thiếc</w>
+	 <w>Hàng Thùng</w>
+	 <w>Hàng Tre</w>
+	 <w>Hàng Trống</w>
+	 <w>Hàng Vải</w>
+	 <w>Hàng Vôi</w>
+	 <w>Hồ Hoàn Kiếm</w>
+	 <w>Hỏa Lò</w>
+	 <w>Hội Vũ</w>
+	 <w>Hồng Hà</w>
+	 <w>Hồng Phúc</w>
+	 <w>Lãn Ông</w>
+	 <w>Lê Duẩn</w>
+	 <w>Lê Lai</w>
+	 <w>Lê Phụng Hiểu</w>
+	 <w>Lê Thạch</w>
+	 <w>Lê Thái Tổ</w>
+	 <w>Lê Thánh Tông</w>
+	 <w>Lê Văn Hưu</w>
+	 <w>Lê Văn Linh</w>
+	 <w>Liên Trì</w>
+	 <w>Lò Đúc</w>
+	 <w>Lò Rèn</w>
+	 <w>Lò Sũ</w>
+	 <w>Long Biên 2</w>
+	 <w>Lương Ngọc Quyến</w>
+	 <w>Lương Văn Can</w>
+	 <w>Lý Đạo Thành</w>
+	 <w>Lý Nam Đế</w>
+	 <w>Lý Quốc Sư</w>
+	 <w>Lý Thái Tổ</w>
+	 <w>Lý Thường Kiệt</w>
+	 <w>Mã Mây</w>
+	 <w>Nam Ngư</w>
+	 <w>Ngõ Bảo Khánh</w>
+	 <w>Ngõ Gạch</w>
+	 <w>Ngõ Huyện</w>
+	 <w>Ngô Quyền</w>
+	 <w>Ngô Thì Nhậm</w>
+	 <w>Ngõ Trạm</w>
+	 <w>Ngô Văn Sở</w>
+	 <w>Nguyễn Chế Nghĩa</w>
+	 <w>Nguyễn Công Hoan</w>
+	 <w>Nguyễn Du</w>
+	 <w>Nguyễn Gia Thiều</w>
+	 <w>Nguyễn Hữu Huân</w>
+	 <w>Nguyễn Khắc Cần</w>
+	 <w>Nguyên Khiết</w>
+	 <w>Nguyễn Quang Bích</w>
+	 <w>Nguyễn Quyền</w>
+	 <w>Nguyễn Siêu</w>
+	 <w>Nguyễn Thái Học</w>
+	 <w>Nguyễn Thiện Thuật</w>
+	 <w>Nguyễn Thiệp</w>
+	 <w>Nguyễn Tư Giản</w>
+	 <w>Nguyễn Văn Côn</w>
+	 <w>Nguyễn Văn Tố</w>
+	 <w>Nguyễn Xí</w>
+	 <w>Nhà Chung</w>
+	 <w>Nhà Thờ</w>
+	 <w>Ô Quan Chưởng</w>
+	 <w>Phạm Ngũ Lão</w>
+	 <w>Phạm Sư Mạnh</w>
+	 <w>Phạm Văn Sáng</w>
+	 <w>Phan Bội Châu</w>
+	 <w>Phan Chu Trinh</w>
+	 <w>Phan Đình Phùng</w>
+	 <w>Phan Huy Chú</w>
+	 <w>Phát Lộc</w>
+	 <w>Phố Huế</w>
+	 <w>Phủ Doãn</w>
+	 <w>Phù Dung</w>
+	 <w>Phúc Tân</w>
+	 <w>Phùng Hưng</w>
+	 <w>Quán Sứ</w>
+	 <w>Quang Trung</w>
+	 <w>Tạ Hiện</w>
+	 <w>Tạm Thương</w>
+	 <w>Tân Trang</w>
+	 <w>Thành</w>
+	 <w>Thanh Hà</w>
+	 <w>Thanh Yên</w>
+	 <w>Thiên Phước</w>
+	 <w>Thợ Nhuộm</w>
+	 <w>Thọ Xương</w>
+	 <w>Thuốc Bắc</w>
+	 <w>Tô Tịch</w>
+	 <w>Tố Tịch</w>
+	 <w>Tôn Đản</w>
+	 <w>Tông Đản</w>
+	 <w>Tống Duy Tân</w>
+	 <w>Trạm</w>
+	 <w>Trần Bình</w>
+	 <w>Trần Bình Trọng</w>
+	 <w>Trần Hưng Đạo</w>
+	 <w>Trần Khánh Dư</w>
+	 <w>Trần Nguyên Hãn</w>
+	 <w>Trần Nhân Tông</w>
+	 <w>Trần Nhật Duật</w>
+	 <w>Trần Phú</w>
+	 <w>Trần Quang Khải</w>
+	 <w>Trần Quốc Toản</w>
+	 <w>Trần Thánh Tông</w>
+	 <w>Tràng Thi</w>
+	 <w>Tràng Tiền</w>
+	 <w>Trang Tử</w>
+	 <w>Triệu Quốc Đạt</w>
+	 <w>Triệu Việt Vương</w>
+	 <w>Trương Hán Siêu</w>
+	 <w>Tức Mạc</w>
+	 <w>Vạn Kiếp</w>
+	 <w>Vạn Kiếp</w>
+	 <w>Võ Văn Dũng</w>
+	 <w>Vọng</w>
+	 <w>Vọng Đức</w>
+	 <w>Vọng Hà</w>
+	 <w>Yên Thái</w>
+	 <w>Yết Kiêu</w>
+	 <w>Bằng A</w>
+	 <w>Bằng B</w>
+	 <w>Bùi Huy Bích</w>
+	 <w>Cầu Gỗ</w>
+	 <w>Cầu Lủ</w>
+	 <w>Cầu Thanh Trì</w>
+	 <w>Đại Đồng</w>
+	 <w>Đại Kim</w>
+	 <w>Đại Từ</w>
+	 <w>Đặng Xuân Bảng</w>
+	 <w>Đền Lừ</w>
+	 <w>Đền Lừ 2</w>
+	 <w>Đền Lừ 3</w>
+	 <w>Định Công</w>
+	 <w>Định Công Hạ</w>
+	 <w>Định Công Thượng</w>
+	 <w>Đinh Tiên Hoàng</w>
+	 <w>Đoàn Kết</w>
+	 <w>Đội Cấn</w>
+	 <w>Đông Thiên</w>
+	 <w>Giải Phóng</w>
+	 <w>Giáp Bát</w>
+	 <w>Giáp Lục</w>
+	 <w>Giáp Nhị</w>
+	 <w>Giáp Tứ</w>
+	 <w>Họa Mi</w>
+	 <w>Hoàng Liệt</w>
+	 <w>Hoàng Mai</w>
+	 <w>Hồng Quang</w>
+	 <w>Hưng Phúc</w>
+	 <w>Khuyến Lương</w>
+	 <w>Kim Đồng</w>
+	 <w>Kim Giang</w>
+	 <w>Kim Ngưu</w>
+	 <w>Lê Trọng Tấn</w>
+	 <w>Lê Văn Phấn</w>
+	 <w>Linh Đàm</w>
+	 <w>Linh Đường</w>
+	 <w>Lĩnh Nam</w>
+	 <w>Lương Khánh Thiện</w>
+	 <w>Mai Động</w>
+	 <w>Mai Khai</w>
+	 <w>Minh Khai</w>
+	 <w>Nam Dư</w>
+	 <w>Nam Dư Thượng</w>
+	 <w>Nghiêm Xuân Yêm</w>
+	 <w>Ngọc Hồi</w>
+	 <w>Ngũ Nhạc</w>
+	 <w>Nguyễn An Ninh</w>
+	 <w>Nguyễn Cảnh Dị</w>
+	 <w>Nguyễn Chí Thanh</w>
+	 <w>Nguyễn Chính</w>
+	 <w>Nguyễn Công Thái</w>
+	 <w>Nguyễn Công Trứ</w>
+	 <w>Nguyễn Đức Cảnh</w>
+	 <w>Nguyễn Duy Trinh</w>
+	 <w>Nguyễn Hữu Thọ</w>
+	 <w>Nguyễn Khoái</w>
+	 <w>Nguyễn Ngọc Nại</w>
+	 <w>Nguyễn Tam Trinh</w>
+	 <w>Nguyễn Trãi</w>
+	 <w>Nguyễn Xiển</w>
+	 <w>Phan Đình Giót</w>
+	 <w>Pháp Vân</w>
+	 <w>Sen Ngoại</w>
+	 <w>Sở Thượng</w>
+	 <w>Tam Trinh</w>
+	 <w>Tân Mai</w>
+	 <w>Tây Trà</w>
+	 <w>Thanh Đàm</w>
+	 <w>Thanh Lân</w>
+	 <w>Thanh Ngân</w>
+	 <w>Thịnh Liệt</w>
+	 <w>Thúy Lĩnh</w>
+	 <w>Trần Điền</w>
+	 <w>Trần Hòa</w>
+	 <w>Trần Nguyên Đán</w>
+	 <w>Trần Thủ Độ</w>
+	 <w>Trương Định</w>
+	 <w>Tứ Kỳ</w>
+	 <w>Tương Mai</w>
+	 <w>Tựu Liệt</w>
+	 <w>Vành Đai 2,5</w>
+	 <w>Vành Đai 3</w>
+	 <w>Vĩnh Hưng</w>
+	 <w>Vĩnh Tuy</w>
+	 <w>Vũ Tông Phan</w>
+	 <w>Yên Duyên</w>
+	 <w>Yên Sở</w>
+	 <w>đường 1</w>
+	 <w>đường 5</w>
+	 <w>Ái Mộ</w>
+	 <w>Anh Đào</w>
+	 <w>Anh Đào 10</w>
+	 <w>Anh Đào 8</w>
+	 <w>Bắc Biên</w>
+	 <w>Bắc Cầu</w>
+	 <w>Bằng Lăng</w>
+	 <w>Bồ Đề</w>
+	 <w>Bưởi</w>
+	 <w>Bưởi</w>
+	 <w>Cầu Bây</w>
+	 <w>Cổ Linh</w>
+	 <w>Cộng Hòa</w>
+	 <w>Công Nghiệp 1</w>
+	 <w>Công Nghiệp 2</w>
+	 <w>Công Nghiệp 3</w>
+	 <w>Công Nghiệp 4</w>
+	 <w>Công Nghiệp 8</w>
+	 <w>Đặng Vũ Hỷ</w>
+	 <w>Đoàn Khuê</w>
+	 <w>Độc Lập</w>
+	 <w>Đức Giang</w>
+	 <w>Gia Quất</w>
+	 <w>Gia Thụy</w>
+	 <w>Hoa Hồng</w>
+	 <w>Hoa Lâm</w>
+	 <w>Hoa Lan</w>
+	 <w>Hoa Lan 2</w>
+	 <w>Hoa Lan 4</w>
+	 <w>Hoa Lan 5</w>
+	 <w>Hoa Phượng 2</w>
+	 <w>Hoa Phượng 3</w>
+	 <w>Hoa Phượng 4</w>
+	 <w>Hoa Phượng 6</w>
+	 <w>Hoa Phượng 7</w>
+	 <w>Hoa Sữa</w>
+	 <w>Hoa Sữa 1</w>
+	 <w>Hoa Sữa 2</w>
+	 <w>Hoa Sữa 3</w>
+	 <w>Hoa Sữa 4</w>
+	 <w>Hoa Sữa 5</w>
+	 <w>Hoàng Như Tiếp</w>
+	 <w>Hồng Hà</w>
+	 <w>Huỳnh Tấn Phát</w>
+	 <w>Huỳnh Văn Nghệ</w>
+	 <w>Kẻ Tạnh</w>
+	 <w>Kim Quan</w>
+	 <w>Lâm Du</w>
+	 <w>Lâm Hạ</w>
+	 <w>Lệ Mật</w>
+	 <w>Liễu giai</w>
+	 <w>Long Biên</w>
+	 <w>Long Biên 1</w>
+	 <w>Long Biên 2</w>
+	 <w>Mai Phúc</w>
+	 <w>Nam Đuống</w>
+	 <w>Ngô Gia Khảm</w>
+	 <w>Ngô Gia Tự</w>
+	 <w>Ngọc Lâm</w>
+	 <w>Ngọc Thụy</w>
+	 <w>Ngọc Trì</w>
+	 <w>Nguyễn Cao Luyện</w>
+	 <w>Nguyễn Đức Thuận</w>
+	 <w>Nguyễn Gia Thiều</w>
+	 <w>Nguyễn Sơn</w>
+	 <w>Nguyên Tử Lực</w>
+	 <w>Nguyễn Văn Cừ</w>
+	 <w>Nguyễn Văn Linh</w>
+	 <w>Nhật</w>
+	 <w>Ô Cách</w>
+	 <w>Phú Viên</w>
+	 <w>Phúc Đồng</w>
+	 <w>Quốc Lộ 5</w>
+	 <w>Sài Đồng</w>
+	 <w>Tân Thụy</w>
+	 <w>Thạch Bàn</w>
+	 <w>Thạch Cầu</w>
+	 <w>Thanh Am</w>
+	 <w>Thống Nhất</w>
+	 <w>Thượng Cát</w>
+	 <w>Thượng Thanh</w>
+	 <w>Thụy Khuyê</w>
+	 <w>Tình Quang</w>
+	 <w>Trạm</w>
+	 <w>Trung Hà</w>
+	 <w>Trường Lâm</w>
+	 <w>Trường Thạnh</w>
+	 <w>Tư Đình</w>
+	 <w>Vạn Hạnh</w>
+	 <w>Việt Hưng</w>
+	 <w>Vũ Xuân Thiều</w>
+	 <w>Xóm Lò</w>
+	 <w>đường 19/8</w>
+	 <w>đường 3</w>
+	 <w>đường 3/2</w>
+	 <w>đường 30/4</w>
+	 <w>đường 37</w>
+	 <w>Bắc Kạn</w>
+	 <w>Bắc Nam</w>
+	 <w>Bắc Sơn</w>
+	 <w>Bến Oánh</w>
+	 <w>Bến Tượng</w>
+	 <w>Cách Mạng Tháng Tám</w>
+	 <w>Chiến Thắng</w>
+	 <w>Chu Văn An</w>
+	 <w>Cột Cờ</w>
+	 <w>Đầm Xanh</w>
+	 <w>Đội Cấn</w>
+	 <w>Đồng Bẩm</w>
+	 <w>Đồng Quang</w>
+	 <w>Dương Tự Minh</w>
+	 <w>Ga Thái Nguyên</w>
+	 <w>Gang Thép</w>
+	 <w>Gia Sàng</w>
+	 <w>Hoàng Ngân</w>
+	 <w>Hoàng Văn Thụ</w>
+	 <w>Hùng Vương</w>
+	 <w>Hương Sơn</w>
+	 <w>Lê Quý Đôn</w>
+	 <w>Lương Ngọc Quyến</w>
+	 <w>Lương Thế Vinh</w>
+	 <w>Lưu Nhân Chú</w>
+	 <w>Lưu Nhân Trú</w>
+	 <w>Minh Cầu</w>
+	 <w>Mỏ Bạch</w>
+	 <w>Nam Núi Cốc</w>
+	 <w>Nguyễn Du</w>
+	 <w>Nguyễn Huệ</w>
+	 <w>Nha Trang</w>
+	 <w>Núi Cốc</w>
+	 <w>Phan Đình Phùng</w>
+	 <w>Phố Hương</w>
+	 <w>Phủ Liễn</w>
+	 <w>Phú Thái</w>
+	 <w>Phú Xá</w>
+	 <w>Phúc Chu</w>
+	 <w>Phúc Hà</w>
+	 <w>Phúc Trìu</w>
+	 <w>Phúc Xuân</w>
+	 <w>Phùng Chí Kiên</w>
+	 <w>Quan Triều</w>
+	 <w>Quang Trung</w>
+	 <w>Quang Vinh</w>
+	 <w>Quốc lộ 1B</w>
+	 <w>Quốc lộ 3</w>
+	 <w>Tân Cương</w>
+	 <w>Tân Quang</w>
+	 <w>Tân Thành</w>
+	 <w>Tân Thịnh</w>
+	 <w>Thanh Niên Xung Phong</w>
+	 <w>Thịnh Đán</w>
+	 <w>Thịnh Đức</w>
+	 <w>Thống Nhất</w>
+	 <w>Tích Lương</w>
+	 <w>Tố Hữu</w>
+	 <w>Túc Duyên</w>
+	 <w>Việt Bắc</w>
+	 <w>Vó Ngựa</w>
+	 <w>Xuân Hòa</w>
+	 <w>Xương Rồng</w>
+	 <w>đường Z115</w>
+	 <w>đường 47</w>
+	 <w>An Dương</w>
+	 <w>An Dương Vương</w>
+	 <w>An Phú Đông 27</w>
+	 <w>An Thành 2</w>
+	 <w>Anh Thành 1</w>
+	 <w>Âu Cơ</w>
+	 <w>Bưởi</w>
+	 <w>Đặng Thai Mai</w>
+	 <w>Dốc Tam Đa</w>
+	 <w>Đông Hưng Thuận 6</w>
+	 <w>Hậu Lân</w>
+	 <w>Hiệp Thành 13</w>
+	 <w>Hồ Sen</w>
+	 <w>Hồ Tây</w>
+	 <w>Hoàng Hoa Thám</w>
+	 <w>Hoàng Quốc Việt</w>
+	 <w>Hồng Hà</w>
+	 <w>Lạc Chính</w>
+	 <w>Lạc Long Quân</w>
+	 <w>Lộc Hòa</w>
+	 <w>Lý Ông Trọng</w>
+	 <w>Mai Xuân Thưởng</w>
+	 <w>Minh Hương</w>
+	 <w>Mương Khai</w>
+	 <w>Nghi Tàm</w>
+	 <w>Nguyễn Hoàng Tôn</w>
+	 <w>Nguyễn Huy Chương</w>
+	 <w>Nguyễn Khanh</w>
+	 <w>Nhật Chiêu</w>
+	 <w>Nước Phần Lan</w>
+	 <w>Phú Gia</w>
+	 <w>Phú Xá</w>
+	 <w>Phúc Hoa</w>
+	 <w>Quảng An</w>
+	 <w>Quảng Bá</w>
+	 <w>Quảng Khánh</w>
+	 <w>Tân Ấp</w>
+	 <w>Tân Chánh Hiệp 16</w>
+	 <w>Tân Thới Hiệp 10</w>
+	 <w>Tây Hồ</w>
+	 <w>Thạnh Lộc 27</w>
+	 <w>Thanh Niên</w>
+	 <w>Thạnh Xuân 21</w>
+	 <w>Thượng Thụy</w>
+	 <w>Thụy Khuê</w>
+	 <w>Tô Ngọc Vân</w>
+	 <w>Trại Gà</w>
+	 <w>Trích Sài</w>
+	 <w>Tứ Liên</w>
+	 <w>Văn Cao</w>
+	 <w>Vành Đai 2</w>
+	 <w>Vệ Hồ</w>
+	 <w>Ven Hồ</w>
+	 <w>Võ Chí Công</w>
+	 <w>Võng Thị</w>
+	 <w>Xuân Diệu</w>
+	 <w>Xuân Đỉnh</w>
+	 <w>Xuân La</w>
+	 <w>Yên Hoa</w>
+	 <w>Yên Phụ</w>
+	 <w>Bùi Xương Trạch</w>
+	 <w>Cầu Lủ</w>
+	 <w>Chính Kinh</w>
+	 <w>Cù Chính Lan</w>
+	 <w>Cự Lộc</w>
+	 <w>Định Công</w>
+	 <w>Định Công Thượng</w>
+	 <w>Giải Phóng</w>
+	 <w>Giáp Nhất</w>
+	 <w>Hạ Đình</w>
+	 <w>Hoàng Đạo Thành</w>
+	 <w>Hoàng Đạo Thúy</w>
+	 <w>Hoàng Minh Giám</w>
+	 <w>Hoàng Ngân</w>
+	 <w>Hoàng Văn Thái</w>
+	 <w>Hồng Liên</w>
+	 <w>Khuất Duy Tiến</w>
+	 <w>Khương Đình</w>
+	 <w>Khương Đình 2</w>
+	 <w>Khương Hạ</w>
+	 <w>Khương Hạ Mới</w>
+	 <w>Khương Trung</w>
+	 <w>Khương Trung mới</w>
+	 <w>Kim Giang</w>
+	 <w>Lê Trọng Tấn</w>
+	 <w>Lê Văn Lương</w>
+	 <w>Lê Văn Thiêm</w>
+	 <w>Lương Ngọc Quyến</w>
+	 <w>Lương Thế Vinh</w>
+	 <w>Ngụy Như Kon Tum</w>
+	 <w>Nguyễn Huy Tưởng</w>
+	 <w>Nguyễn Ngọc Nại</w>
+	 <w>Nguyễn Ngọc Vũ</w>
+	 <w>Nguyễn Quý Đức</w>
+	 <w>Nguyễn Thị Định</w>
+	 <w>Nguyễn Thị Thập</w>
+	 <w>Nguyễn Trãi</w>
+	 <w>Nguyễn Tuân</w>
+	 <w>Nguyễn Văn Trỗi</w>
+	 <w>Nguyễn Viết Xuân</w>
+	 <w>Nguyễn Xiển</w>
+	 <w>Nhân Hòa</w>
+	 <w>Phạm Đình Hổ</w>
+	 <w>Phan Đình Giót</w>
+	 <w>Phố Vọng</w>
+	 <w>Phùng Khoang</w>
+	 <w>Phương Liệt</w>
+	 <w>Quan Nhân</w>
+	 <w>Tân Hồng</w>
+	 <w>Thanh Nhàn</w>
+	 <w>Thượng Đình</w>
+	 <w>Tô Vĩnh Diện</w>
+	 <w>Trần Điền</w>
+	 <w>Triều Khúc</w>
+	 <w>Trường Chinh</w>
+	 <w>Vũ Hữu</w>
+	 <w>Vũ Tông Phan</w>
+	 <w>Vũ Trọng Phụng</w>
+	 <w>Vương Thừa Vũ</w>
+	 <w>An Trạch</w>
+	 <w>Bích Câu</w>
+	 <w>Cát Linh</w>
+	 <w>Cầu Mới</w>
+	 <w>Cây Bàn</w>
+	 <w>Chợ Khâm Thiên</w>
+	 <w>Chùa Bộc</w>
+	 <w>Chùa Láng</w>
+	 <w>Chùa Nền</w>
+	 <w>Đại La</w>
+	 <w>Đặng Tiến Đông</w>
+	 <w>Đặng Trần Côn</w>
+	 <w>Đặng Văn Ngữ</w>
+	 <w>Đào Duy Anh</w>
+	 <w>Đê La Thành</w>
+	 <w>Đoàn Thị Điểm</w>
+	 <w>Đông Các</w>
+	 <w>Đông Tác</w>
+	 <w>Đường Láng</w>
+	 <w>Giải Phóng</w>
+	 <w>Giảng Võ</w>
+	 <w>Hàng Bột</w>
+	 <w>Hàng Cháo</w>
+	 <w>Hàng Đẫy</w>
+	 <w>Hào Nam</w>
+	 <w>Hồ Ba Mẫu</w>
+	 <w>Hồ Đắc Di</w>
+	 <w>Hồ Giám</w>
+	 <w>Hồ Văn Chương</w>
+	 <w>Hoàng Cầu</w>
+	 <w>Hoàng Mai</w>
+	 <w>Hoàng Ngọc Phách</w>
+	 <w>Hoàng Tích Trí</w>
+	 <w>Huỳnh Thúc Kháng</w>
+	 <w>Khâm Thiên</w>
+	 <w>Khương Thượng</w>
+	 <w>Kim Hoa</w>
+	 <w>Kim Liên</w>
+	 <w>Kim Liên Mới</w>
+	 <w>La Thành</w>
+	 <w>Láng</w>
+	 <w>Láng Hạ</w>
+	 <w>Láng Thượng</w>
+	 <w>Lê Duẩn</w>
+	 <w>Lê Trực</w>
+	 <w>Linh Quang</w>
+	 <w>Linh Quang A</w>
+	 <w>Linh Quang B</w>
+	 <w>Lương Định Của</w>
+	 <w>Lương Sử A</w>
+	 <w>Lương Sử B</w>
+	 <w>Lương Sử C</w>
+	 <w>Lý Văn Phúc</w>
+	 <w>Mai Anh Tuấn</w>
+	 <w>Nam Đồng</w>
+	 <w>Ngô Sĩ Liên</w>
+	 <w>Ngô Tất Tố</w>
+	 <w>Nguyễn Chí Thanh</w>
+	 <w>Nguyễn Công Hoan</w>
+	 <w>Nguyên Hồng</w>
+	 <w>Nguyễn Khuyến</w>
+	 <w>Nguyễn Lương Bằng</w>
+	 <w>Nguyễn Ngọc Nại</w>
+	 <w>Nguyễn Như Đổ</w>
+	 <w>Nguyễn Phúc Lai</w>
+	 <w>Nguyễn Thái Học</w>
+	 <w>Phạm Ngọc Thạch</w>
+	 <w>Phan Huy Thông</w>
+	 <w>Phan Phú Tiên</w>
+	 <w>Phan Phù Tiên</w>
+	 <w>Phan Văn Trị</w>
+	 <w>Pháo Đài Láng</w>
+	 <w>Phố 224</w>
+	 <w>Phương Mai</w>
+	 <w>Quốc Tử Giám</w>
+	 <w>Tây Sơn</w>
+	 <w>Thái Hà</w>
+	 <w>Thái Thịnh</w>
+	 <w>Thái Thịnh 2</w>
+	 <w>Thành Công</w>
+	 <w>Thanh Miền</w>
+	 <w>Thanh Miếu</w>
+	 <w>Thịnh Hào</w>
+	 <w>Thịnh Quang</w>
+	 <w>Thổ Quan</w>
+	 <w>Thông Phong</w>
+	 <w>Thủy Lợi</w>
+	 <w>Tôn Đức Thắng</w>
+	 <w>Tôn Thất Tùng</w>
+	 <w>Trần Hữu Tước</w>
+	 <w>Trần Quang Diệu</w>
+	 <w>Trần Quí Cáp</w>
+	 <w>Trần Quý Cáp</w>
+	 <w>Trịnh Hoài Đức</w>
+	 <w>Trúc Khê</w>
+	 <w>Trung Liệt</w>
+	 <w>Trường Chinh</w>
+	 <w>Văn Chương</w>
+	 <w>Văn Hương</w>
+	 <w>Văn Miếu</w>
+	 <w>Vĩnh Hồ</w>
+	 <w>Võ Văn Dũng</w>
+	 <w>Vũ Ngọc Phan</w>
+	 <w>Vũ Thạnh</w>
+	 <w>Xã Đàn</w>
+	 <w>Xã Đàn 2</w>
+	 <w>Yên Lãng</w>
+	 <w>đường 1</w>
+	 <w>đường 21</w>
+	 <w>đường 418</w>
+	 <w>đường 87</w>
+	 <w>Bùi Thị Xuân</w>
+	 <w>Cầu Trì</w>
+	 <w>Chùa Thông</w>
+	 <w>Đinh Tiên Hoàng</w>
+	 <w>Đường bê tông Cao Trung</w>
+	 <w>Đường Lâm</w>
+	 <w>Hoàng Diệu</w>
+	 <w>Lạc Sơn</w>
+	 <w>Láng Hòa Lạc</w>
+	 <w>Lê Lợi</w>
+	 <w>Lê Trọng Tấn</w>
+	 <w>Ngô Quyền</w>
+	 <w>Nguyễn Thái Học</w>
+	 <w>Phạm Hồng Thái</w>
+	 <w>Phạm Ngũ Lão</w>
+	 <w>Phó Đức Chính</w>
+	 <w>Phố Hàng</w>
+	 <w>Phùng Khắc Khoan</w>
+	 <w>Quang Trung</w>
+	 <w>Quốc lộ 21A</w>
+	 <w>Quốc lộ 32</w>
+	 <w>Quốc lộ 71</w>
+	 <w>Thanh Vị</w>
+	 <w>Tỉnh lộ 414</w>
+	 <w>Tỉnh lộ 416</w>
+	 <w>Tỉnh lộ 73</w>
+	 <w>Trung Sơn Trầm</w>
+	 <w>Trưng Vương</w>
+	 <w>Tùng Thiện</w>
+	 <w>Vĩnh Thụy</w>
+	 <w>Huyện Ba Vì</w>
+	 <w>Huyện Chương Mỹ</w>
+	 <w>Huyện Gia Lâm</w>
+	 <w>Huyện Hoài Đức</w>
+	 <w>Huyện Mê Linh</w>
+	 <w>Huyện Mỹ Đức</w>
+	 <w>Huyện Phú Xuyên</w>
+	 <w>Huyện Phúc Thọ</w>
+	 <w>Huyện Quốc Oai</w>
+	 <w>Huyện Sóc Sơn</w>
+	 <w>Huyện Thạch Thất</w>
+	 <w>Huyện Thanh Oai</w>
+	 <w>Huyện Thanh Trì</w>
+	 <w>Huyện Thường Tín</w>
+	 <w>Huyện Từ Liêm</w>
+	 <w>Huyện Ứng Hòa</w>
+	 <w>Huyện Đan Phượng</w>
+	 <w>Huyện Đông Anh</w>
+	 <w>Quận Ba Đình</w>
+	 <w>Quận Cầu Giấy</w>
+	 <w>Quận Hà Đông</w>
+	 <w>Quận Hai Bà Trưng</w>
+	 <w>Quận Hoàn Kiếm</w>
+	 <w>Quận Hoàng Mai</w>
+	 <w>Quận Long Biên</w>
+	 <w>Quận Tây Hồ</w>
+	 <w>Quận Thanh Xuân</w>
+	 <w>Quận Đống Đa</w>
+	 <w>Thị Xã Sơn Tây</w>
+	 <w>Ba Trại</w>
+ <w>Ba Vì</w>
+ <w>Cẩm Lĩnh</w>
+ <w>Cam Thượng</w>
+ <w>Châu Sơn</w>
+ <w>Chu Minh</w>
+ <w>Cổ Đô</w>
+ <w>Đông Quang</w>
+ <w>Đồng Thái</w>
+ <w>Khánh Thượng</w>
+ <w>Minh Châu</w>
+ <w>Minh Quang</w>
+ <w>Phong Vân</w>
+ <w>Phú Châu</w>
+ <w>Phú Cường</w>
+ <w>Phú Đông</w>
+ <w>Phú Phương</w>
+ <w>Phú Sơn</w>
+ <w>Sơn Đà</w>
+ <w>Tản Hồng</w>
+ <w>Tản Lĩnh</w>
+ <w>Tây Đằng</w>
+ <w>Thái Hòa</w>
+ <w>Thuần Mỹ</w>
+ <w>Thụy An</w>
+ <w>Tiên Phong</w>
+ <w>Tòng Bạt</w>
+ <w>Vân Hòa</w>
+ <w>Vạn Thắng</w>
+ <w>Vật Lại</w>
+ <w>Yên Bài</w>
+ <w>Chà Cang</w>
+ <w>Chà Nưa</w>
+ <w>Chà Tở</w>
+ <w>Nà Bủng</w>
+ <w>Na Cô Sa</w>
+ <w>Nà Hỳ</w>
+ <w>Nà Khoa</w>
+ <w>Nậm Chua</w>
+ <w>Nậm Khăn</w>
+ <w>Nậm Nhừ</w>
+ <w>Nậm Tin</w>
+ <w>Pa Tần</w>
+ <w>Phìn Hồ</w>
+ <w>Vàng Đán</w>
+ <w>Chúc Sơn</w>
+ <w>Đại Yên</w>
+ <w>Đồng Lạc</w>
+ <w>Đồng Phú</w>
+ <w>Đông Phương Yên</w>
+ <w>Đông Sơn</w>
+ <w>Hoà Chính</w>
+ <w>Hoàng Diệu</w>
+ <w>Hoàng Văn Thụ</w>
+ <w>Hồng Phong</w>
+ <w>Hợp Đồng</w>
+ <w>Hữu Văn</w>
+ <w>Lam Điền</w>
+ <w>Mỹ Lương</w>
+ <w>Nam Phương Tiến</w>
+ <w>Ngọc Hòa</w>
+ <w>Phú Nam An</w>
+ <w>Phú Nghĩa</w>
+ <w>Phụng Châu</w>
+ <w>Quảng Bị</w>
+ <w>Tân Tiến</w>
+ <w>Thanh Bình</w>
+ <w>Thượng Vực</w>
+ <w>Thụy Hương</w>
+ <w>Thuỷ Xuân Tiên</w>
+ <w>Tiên Phương</w>
+ <w>Tốt Động</w>
+ <w>Trần Phú</w>
+ <w>Trung Hòa</w>
+ <w>Trường Yên</w>
+ <w>Văn Võ</w>
+ <w>Xuân Mai</w>
+ <w>Bát Tràng</w>
+ <w>Cổ Bi</w>
+ <w>Đa Tốn</w>
+ <w>Đặng Xá</w>
+ <w>Đình Xuyên</w>
+ <w>Đông Dư</w>
+ <w>Dương Hà</w>
+ <w>Dương Quang</w>
+ <w>Dương Xá</w>
+ <w>Kiêu Kỵ</w>
+ <w>Kim Lan</w>
+ <w>Kim Sơn</w>
+ <w>Lệ Chi</w>
+ <w>Ninh Hiệp</w>
+ <w>Phù Đổng</w>
+ <w>Phú Thị</w>
+ <w>Trâu Quỳ</w>
+ <w>Trung Mầu</w>
+ <w>Văn Đức</w>
+ <w>Yên Thường</w>
+ <w>Yên Viên</w>
+ <w>An Khánh</w>
+ <w>An Thượng</w>
+ <w>Cát Quế</w>
+ <w>Đắc Sở</w>
+ <w>Di Trạch</w>
+ <w>Đông La</w>
+ <w>Đức Giang</w>
+ <w>Đức Thượng</w>
+ <w>Dương Liễu</w>
+ <w>Kim Chung</w>
+ <w>La Phù</w>
+ <w>Lại Yên</w>
+ <w>Minh Khai</w>
+ <w>Sơn Đồng</w>
+ <w>Song Phương</w>
+ <w>Tiền Yên</w>
+ <w>Trạm Trôi</w>
+ <w>Vân Canh</w>
+ <w>Vân Côn</w>
+ <w>Yên Sở</w>
+ <w>Chi Đông</w>
+ <w>Chu Phan</w>
+ <w>Đại Thịnh</w>
+ <w>Hoàng Kim</w>
+ <w>Kim Hoa</w>
+ <w>Liên Mạc</w>
+ <w>Mê Linh</w>
+ <w>Quang Minh</w>
+ <w>Tam Đồng</w>
+ <w>Thạch Đà</w>
+ <w>Thanh Lâm</w>
+ <w>Tiền Phong</w>
+ <w>Tiến Thắng</w>
+ <w>Tiến Thịnh</w>
+ <w>Tráng Việt</w>
+ <w>Tự Lập</w>
+ <w>Văn Khê</w>
+ <w>Vạn Yên</w>
+ <w>An Mỹ</w>
+ <w>An Phú</w>
+ <w>An Tiến</w>
+ <w>Bột Xuyên</w>
+ <w>Đại Hưng</w>
+ <w>Đại Nghĩa</w>
+ <w>Đốc Tín</w>
+ <w>Đồng Tâm</w>
+ <w>Hồng Sơn</w>
+ <w>Hợp Thanh</w>
+ <w>Hợp Tiến</w>
+ <w>Hùng Tiến</w>
+ <w>Hương Sơn</w>
+ <w>Lê Thanh</w>
+ <w>Mỹ Thành</w>
+ <w>Phù Lưu Tế</w>
+ <w>Phúc Lâm</w>
+ <w>Phùng Xá</w>
+ <w>Thượng Lâm</w>
+ <w>Tuy Lai</w>
+ <w>Vạn Kim</w>
+ <w>Xuy Xá</w>
+ <w>Bạch Hạ</w>
+ <w>Châu Can</w>
+ <w>Chuyên Mỹ</w>
+ <w>Đại Thắng</w>
+ <w>Đại Xuyên</w>
+ <w>Hoàng Long</w>
+ <w>Hồng Minh</w>
+ <w>Hồng Thái</w>
+ <w>Khai Thái</w>
+ <w>Minh Tân</w>
+ <w>Nam Phong</w>
+ <w>Nam Triều</w>
+ <w>Phú Minh</w>
+ <w>Phú Túc</w>
+ <w>Phú Xuyên</w>
+ <w>Phú Yên</w>
+ <w>Phúc Tiến</w>
+ <w>Phượng Dực</w>
+ <w>Quang Lãng</w>
+ <w>Quang Trung</w>
+ <w>Sơn Hà</w>
+ <w>Tân Dân</w>
+ <w>Thụy Phú</w>
+ <w>Tri Thủy</w>
+ <w>Tri Trung</w>
+ <w>Văn Hoàng</w>
+ <w>Văn Nhân</w>
+ <w>Vân Từ</w>
+ <w>Cẩm Đình</w>
+ <w>Gạch</w>
+ <w>Hát Môn</w>
+ <w>Hiệp Thuận</w>
+ <w>Liên Hiệp</w>
+ <w>Long Xuyên</w>
+ <w>Ngọc Tảo</w>
+ <w>Phúc Hòa</w>
+ <w>Phúc Thọ</w>
+ <w>Phụng Thượng</w>
+ <w>Phương Độ</w>
+ <w>Sen Chiểu</w>
+ <w>Tam Hiệp</w>
+ <w>Tam Thuấn</w>
+ <w>Thanh Đa</w>
+ <w>Thọ Lộc</w>
+ <w>Thượng Cốc</w>
+ <w>Tích Giang</w>
+ <w>Trạch Mỹ Lộc</w>
+ <w>Vân Hà</w>
+ <w>Vân Nam</w>
+ <w>Vân Phúc</w>
+ <w>Võng Xuyên</w>
+ <w>Xuân Phú</w>
+ <w>Cấn Hữu</w>
+ <w>Cộng Hòa</w>
+ <w>Đại Thành</w>
+ <w>Đồng Quang</w>
+ <w>Đông Xuân</w>
+ <w>Đông Yên</w>
+ <w>Hòa Thạch</w>
+ <w>Liệp Tuyết</w>
+ <w>Nghĩa Hương</w>
+ <w>Ngọc Liệp</w>
+ <w>Ngọc Mỹ</w>
+ <w>Phú Cát</w>
+ <w>Phú Mãn</w>
+ <w>Phượng Cách</w>
+ <w>Quốc Oai</w>
+ <w>Sài Sơn</w>
+ <w>Tân Hòa</w>
+ <w>Tân Phú</w>
+ <w>Thạch Thán</w>
+ <w>Tuyết Nghĩa</w>
+ <w>Yên Sơn</w>
+ <w>Bắc Phú</w>
+ <w>Bắc Sơn</w>
+ <w>Đông Xuân</w>
+ <w>Đức Hoà</w>
+ <w>Hiền Ninh</w>
+ <w>Hồng Kỳ</w>
+ <w>Kim Lũ</w>
+ <w>Mai Đình</w>
+ <w>Minh Phú</w>
+ <w>Minh Trí</w>
+ <w>Nam Sơn</w>
+ <w>Phú Cường</w>
+ <w>Phù Linh</w>
+ <w>Phù Lỗ</w>
+ <w>Phú Minh</w>
+ <w>Quang Tiến</w>
+ <w>Sóc Sơn</w>
+ <w>Tân Dân</w>
+ <w>Tân Hưng</w>
+ <w>Tân Minh</w>
+ <w>Thanh Xuân</w>
+ <w>Tiên Dược</w>
+ <w>Trung Giã</w>
+ <w>Việt Long</w>
+ <w>Xuân Giang</w>
+ <w>Xuân Thu</w>
+ <w>Bình Phú</w>
+ <w>Bình Yên</w>
+ <w>Cẩm Yên</w>
+ <w>Cần Kiệm</w>
+ <w>Canh Nậu</w>
+ <w>Chàng Sơn</w>
+ <w>Đại Đồng</w>
+ <w>Dị Nậu</w>
+ <w>Đồng Trúc</w>
+ <w>Hạ Bằng</w>
+ <w>Hương Ngải</w>
+ <w>Hữu Bằng</w>
+ <w>Kim Quan</w>
+ <w>Lại Thượng</w>
+ <w>Liên Quan</w>
+ <w>Phú Kim</w>
+ <w>Phùng Xá</w>
+ <w>Tân Xã</w>
+ <w>Thạch Hòa</w>
+ <w>Thạch Xá</w>
+ <w>Tiến Xuân</w>
+ <w>Yên Bình</w>
+ <w>Yên Trung</w>
+ <w>Bích Hòa</w>
+ <w>Bình Minh</w>
+ <w>Cao Dương</w>
+ <w>Cao Viên</w>
+ <w>Cự Khê</w>
+ <w>Dân Hòa</w>
+ <w>Đỗ Động</w>
+ <w>Hồng Dương</w>
+ <w>Kim An</w>
+ <w>Kim Bài</w>
+ <w>Kim Thư</w>
+ <w>Liên Châu</w>
+ <w>Mỹ Hưng</w>
+ <w>Phương Trung</w>
+ <w>Tam Hưng</w>
+ <w>Tân Ước</w>
+ <w>Thanh Cao</w>
+ <w>Thanh Mai</w>
+ <w>Thanh Thùy</w>
+ <w>Thanh Văn</w>
+ <w>Xuân Dương</w>
+ <w></w>
+ <w>Chương Dương</w>
+ <w>Dũng Tiến</w>
+ <w>Duyên Thái</w>
+ <w>Hà Hồi</w>
+ <w>Hiền Giang</w>
+ <w>Hòa Bình</w>
+ <w>Hồng Vân</w>
+ <w>Khánh Hà</w>
+ <w>Lê Lợi</w>
+ <w>Liên Phương</w>
+ <w>Minh Cường</w>
+ <w>Nghiêm Xuyên</w>
+ <w>Nguyễn Trãi</w>
+ <w>Nhị Khê</w>
+ <w>Ninh Sở</w>
+ <w>Quất Động</w>
+ <w>Tân Minh</w>
+ <w>Thắng Lợi</w>
+ <w>Thống Nhất</w>
+ <w>Thư Phú</w>
+ <w>Thường Tín</w>
+ <w>Tiền Phong</w>
+ <w>Tô Hiệu</w>
+ <w>Tự Nhiên</w>
+ <w>Văn Bình</w>
+ <w>Vạn Điểm</w>
+ <w>Văn Phú</w>
+ <w>Vân Tảo</w>
+ <w>Văn Tự</w>
+ <w>An Hiệp</w>
+ <w>An Hóa</w>
+ <w>An Khánh</w>
+ <w>An Phước</w>
+ <w>Châu Thành</w>
+ <w>Giao Hòa</w>
+ <w>Giao Long</w>
+ <w>Hữu Định</w>
+ <w>Mỹ Thành</w>
+ <w>Phú An Hòa</w>
+ <w>Phú Đức</w>
+ <w>Phú Túc</w>
+ <w>Phước Thạnh</w>
+ <w>Quới Sơn</w>
+ <w>Quới Thành</w>
+ <w>Sơn Hòa</w>
+ <w>Tam Phước</w>
+ <w>Tân Phú</w>
+ <w>Tân Thạch</w>
+ <w>Thành Triệu</w>
+ <w>Tiên Long</w>
+ <w>Tiên Thủy</w>
+ <w>Tường Đa</w>
+ <w>Cổ Nhuế 1</w>
+ <w>Cổ Nhuế 2</w>
+ <w>Đông Ngạc</w>
+ <w>Đức Thắng</w>
+ <w>Liên Mạc</w>
+ <w>Minh Khai</w>
+ <w>Phú Diễn</w>
+ <w>Phúc Diễn</w>
+ <w>Tây Tựu</w>
+ <w>Thượng Cát</w>
+ <w>Thụy Phương</w>
+ <w>Xuân Đỉnh</w>
+ <w>Xuân Tảo</w>
+ <w>Cao Thành</w>
+ <w>Đại Cường</w>
+ <w>Đại Hùng</w>
+ <w>Đội Bình</w>
+ <w>Đông Lỗ</w>
+ <w>Đồng Tân</w>
+ <w>Đồng Tiến</w>
+ <w>Hòa Lâm</w>
+ <w>Hòa Nam</w>
+ <w>Hòa Phú</w>
+ <w>Hoa Sơn</w>
+ <w>Hòa Xá</w>
+ <w>Hồng Quang</w>
+ <w>Kim Đường</w>
+ <w>Liên Bạt</w>
+ <w>Lưu Hoàng</w>
+ <w>Minh Đức</w>
+ <w>Phù Lưu</w>
+ <w>Phương Tú</w>
+ <w>Quảng Phú Cầu</w>
+ <w>Sơn Công</w>
+ <w>Tân Phương</w>
+ <w>Tảo Dương Văn</w>
+ <w>Trầm Lộng</w>
+ <w>Trung Tú</w>
+ <w>Trường Thịnh</w>
+ <w>Vân Đình</w>
+ <w>Vạn Thái</w>
+ <w>Viên An</w>
+ <w>Viên Nội</w>
+ <w>Đan Phượng</w>
+ <w>Đồng Tháp</w>
+ <w>Hạ Mỗ</w>
+ <w>Hồng Hà</w>
+ <w>Liên Hà</w>
+ <w>Liên Hồng</w>
+ <w>Liên Trung</w>
+ <w>Phùng</w>
+ <w>Phương Đình</w>
+ <w>Song Phượng</w>
+ <w>Tân Hội</w>
+ <w>Tân Lập</w>
+ <w>Thọ An</w>
+ <w>Thọ Xuân</w>
+ <w>Thượng Mỗ</w>
+ <w>Trung Châu</w>
+ <w>Bắc Hồng</w>
+ <w>Cổ Loa</w>
+ <w>Đại Mạch</w>
+ <w>Đông Anh</w>
+ <w>Đông Hội</w>
+ <w>Dục Tú</w>
+ <w>Hải Bối</w>
+ <w>Kim Chung</w>
+ <w>Kim Nỗ</w>
+ <w>Liên Hà</w>
+ <w>Mai Lâm</w>
+ <w>Nam Hồng</w>
+ <w>Nguyên Khê</w>
+ <w>Tàm Xá</w>
+ <w>Tầm Xá</w>
+ <w>Thụy Lâm</w>
+ <w>Tiên Dương</w>
+ <w>Uy Nỗ</w>
+ <w>Vân Hà</w>
+ <w>Vân Nội</w>
+ <w>Việt Hùng</w>
+ <w>Vĩnh Ngọc</w>
+ <w>Võng La</w>
+ <w>Xuân Canh</w>
+ <w>Xuân Nộn</w>
+ <w>Cống Vị</w>
+ <w>Điện Biên</w>
+ <w>Đội Cấn</w>
+ <w>Giảng Võ</w>
+ <w>Kim Mã</w>
+ <w>Liễu Giai</w>
+ <w>Ngọc Hà</w>
+ <w>Ngọc Khánh</w>
+ <w>Nguyễn Trung Trực</w>
+ <w>Phúc Xá</w>
+ <w>Quán Thánh</w>
+ <w>Thành Công</w>
+ <w>Trúc Bạch</w>
+ <w>Vĩnh Phúc</w>
+ <w>Dịch Vọng</w>
+ <w>Dịch Vọng Hậu</w>
+ <w>Mai Dịch</w>
+ <w>Nghĩa Đô</w>
+ <w>Nghĩa Tân</w>
+ <w>Quan Hoa</w>
+ <w>Trung Hòa</w>
+ <w>Yên Hòa</w>
+ <w>Biên Giang</w>
+ <w>Đồng Mai</w>
+ <w>Dương Nội</w>
+ <w>Hà Cầu</w>
+ <w>Kiến Hưng</w>
+ <w>La Khê</w>
+ <w>Mỗ Lao</w>
+ <w>Nguyễn Trãi</w>
+ <w>Phú La</w>
+ <w>Phú Lãm</w>
+ <w>Phú Lương</w>
+ <w>Phúc La</w>
+ <w>Quang Trung</w>
+ <w>Vạn Phúc</w>
+ <w>Văn Quán</w>
+ <w>Yên Nghĩa</w>
+ <w>Yết Kiêu</w>
+ <w>Bạch Đằng</w>
+ <w>Bách Khoa</w>
+ <w>Bạch Mai</w>
+ <w>Bùi Thị Xuân</w>
+ <w>Cầu Dền</w>
+ <w>Đống Mác</w>
+ <w>Đồng Nhân</w>
+ <w>Đồng Tâm</w>
+ <w>Lê Đại Hành</w>
+ <w>Minh Khai</w>
+ <w>Ngô Thì Nhậm</w>
+ <w>Nguyễn Du</w>
+ <w>Phạm Đình Hổ</w>
+ <w>Phố Huế</w>
+ <w>Quỳnh Lôi</w>
+ <w>Quỳnh Mai</w>
+ <w>Thanh Lương</w>
+ <w>Thanh Nhàn</w>
+ <w>Trương Định</w>
+ <w>Vĩnh Tuy</w>
+ <w>Chương Dương Độ</w>
+ <w>Cửa Đông</w>
+ <w>Cửa Nam</w>
+ <w>Đồng Xuân</w>
+ <w>Hàng Bạc</w>
+ <w>Hàng Bài</w>
+ <w>Hàng Bồ</w>
+ <w>Hàng Bông</w>
+ <w>Hàng Buồm</w>
+ <w>Hàng Đào</w>
+ <w>Hàng Gai</w>
+ <w>Hàng Mã</w>
+ <w>Hàng Trống</w>
+ <w>Lý Thái Tổ</w>
+ <w>Phan Chu Trinh</w>
+ <w>Phúc Tân</w>
+ <w>Trần Hưng Đạo</w>
+ <w>Tràng Tiền</w>
+ <w>Đại Kim</w>
+ <w>Định Công</w>
+ <w>Giáp Bát</w>
+ <w>Hoàng Liệt</w>
+ <w>Hoàng Văn Thụ</w>
+ <w>Lĩnh Nam</w>
+ <w>Mai Động</w>
+ <w>Tân Mai</w>
+ <w>Thanh Trì</w>
+ <w>Thịnh Liệt</w>
+ <w>Trần Phú</w>
+ <w>Tương Mai</w>
+ <w>Vĩnh Hưng</w>
+ <w>Yên Sở</w>
+ <w>Bồ Đề</w>
+ <w>Cự Khối</w>
+ <w>Đức Giang</w>
+ <w>Gia Thụy</w>
+ <w>Giang Biên</w>
+ <w>Long Biên</w>
+ <w>Ngọc Lâm</w>
+ <w>Ngọc Thụy</w>
+ <w>Phúc Đồng</w>
+ <w>Phúc Lợi</w>
+ <w>Sài Đồng</w>
+ <w>Thạch Bàn</w>
+ <w>Thượng Thanh</w>
+ <w>Việt Hưng</w>
+ <w>Cam Giá</w>
+ <w>Cao Ngạn</w>
+ <w>Đồng Bẩm</w>
+ <w>Đồng Quang</w>
+ <w>Gia Sàng</w>
+ <w>Hoàng Văn Thụ</w>
+ <w>Hương Sơn</w>
+ <w>Lương Sơn</w>
+ <w>Phan Đình Phùng</w>
+ <w>Phú Xá</w>
+ <w>Phúc Hà</w>
+ <w>Phúc Trìu</w>
+ <w>Phúc Xuân</w>
+ <w>Quan Triều</w>
+ <w>Quang Trung</w>
+ <w>Quang Vinh</w>
+ <w>Quyết Thắng</w>
+ <w>Tân Cương</w>
+ <w>Tân Lập</w>
+ <w>Tân Long</w>
+ <w>Tân Thành</w>
+ <w>Tân Thịnh</w>
+ <w>Thịnh Đán</w>
+ <w>Thịnh Đức</w>
+ <w>Thủy Đường</w>
+ <w>Tích Lương</w>
+ <w>Trung Thành</w>
+ <w>Trưng Vương</w>
+ <w>Túc Duyên</w>
+ <w>Bưởi</w>
+ <w>Nhật Tân</w>
+ <w>Phú Thượng</w>
+ <w>Quảng An</w>
+ <w>Thụy Khuê</w>
+ <w>Tứ Liên</w>
+ <w>Xuân La</w>
+ <w>Yên Phụ</w>
+ <w>Hạ Đình</w>
+ <w>Khương Đình</w>
+ <w>Khương Mai</w>
+ <w>Khương Trung</w>
+ <w>Kim Giang</w>
+ <w>Nhân Chính</w>
+ <w>Phương Liệt</w>
+ <w>Thanh Xuân Bắc</w>
+ <w>Thanh Xuân Nam</w>
+ <w>Thanh Xuân Trung</w>
+ <w>Thượng Đình</w>
+ <w>Cát Linh</w>
+ <w>Hàng Bột</w>
+ <w>Hàng Bột</w>
+ <w>Khâm Thiên</w>
+ <w>Khương Thượng</w>
+ <w>Kim Liên</w>
+ <w>Láng Hạ</w>
+ <w>Láng Thượng</w>
+ <w>Nam Đồng</w>
+ <w>Ngã Tư Sở</w>
+ <w>Ô Chợ Dừa</w>
+ <w>Phương Liên</w>
+ <w>Phương Mai</w>
+ <w>Quang Trung</w>
+ <w>Quốc Tử Giám</w>
+ <w>Thịnh Quang</w>
+ <w>Thổ Quan</w>
+ <w>Trung Liệt</w>
+ <w>Trung Phụng</w>
+ <w>Trung Tự</w>
+ <w>Văn Chương</w>
+ <w>Văn Miếu</w>
+ <w>Cổ Đông</w>
+ <w>Đường Lâm</w>
+ <w>Kim Sơn</w>
+ <w>Lê Lợi</w>
+ <w>Ngô Quyền</w>
+ <w>Phú Thịnh</w>
+ <w>Quang Trung</w>
+ <w>Sơn Đông</w>
+ <w>Sơn Lộc</w>
+ <w>Thanh Mỹ</w>
+ <w>Trung Hưng</w>
+ <w>Trung Sơn Trầm</w>
+ <w>Viên Sơn</w>
+ <w>Xuân Khanh</w>
+ <w>Xuân Sơn</w>
+ <w>quốc gia</w>
+ <w>công nghệ</w>
+ <w>khoa học tự nhiên</w>
+ <w>khoa học xã hội và nhân văn</w>
+ <w>kinh tế (qg )</w>
+ <w>ngoại ngữ</w>
+ <w>khoa luật</w>
+ <w>giáo dục</w>
+ <w>khoa y dược</w>
+ <w>khoa quốc tế</w>
+ <w>âm nhạc quốc gia việt nam</w>
+ <w>báo chí tuyên truyền</w>
+ <w>chính sách và phát triển</w>
+ <w>công nghệ bưu chính viễn thông</w>
+ <w>hành chính quốc gia</w>
+ <w>kỹ thuật mật mã</w>
+ <w>ngân hàng</w>
+ <w>ngoại giao</w>
+ <w>quản lý giáo dục</w>
+ <w>tài chính</w>
+ <w>thanh thiếu niên việt nam</w>
+ <w>y dược học cổ truyền việt nam</w>
+ <w>bách khoa</w>
+ <w>công đoàn</w>
+ <w>công nghệ giao thông vận tải</w>
+ <w>công nghiệp</w>
+ <w>công nghiệp việt hung</w>
+ <w>dược</w>
+ <w>điện lực</w>
+ <w>giao thông vận tải</w>
+ <w>hà nội</w>
+ <w>khoa học và công nghệ</w>
+ <w>kinh tế kỹ thuật công nghiệp</w>
+ <w>kinh tế quốc dân</w>
+ <w>kiến trúc</w>
+ <w>lao động xã hội</w>
+ <w>lâm nghiệp</w>
+ <w>luật</w>
+ <w>mỏ địa chất</w>
+ <w>mỹ thuật công nghiệp</w>
+ <w>mỹ thuật việt nam</w>
+ <w>ngoại thương</w>
+ <w>nội vụ</w>
+ <w>nông nghiệp</w>
+ <w>sân khấu điện ảnh</w>
+ <w>sư phạm</w>
+ <w>sư phạm nghệ thuật trung ương</w>
+ <w>sư phạm thể dục thể thao</w>
+ <w>tài nguyên và môi</w>
+ <w>thủy lợi</w>
+ <w>thương mại</w>
+ <w>văn hóa</w>
+ <w>xây dựng</w>
+ <w>đh y</w>
+ <w>y tế công cộng</w>
+ <w>viện mở</w>
+ <w>đông đô</w>
+ <w>phương đông</w>
+ <w>thăng long</w>
+ <w>đại nam</w>
+ <w>fpt</w>
+ <w>hòa bình</w>
+ <w>kinh doanh và công nghệ</w>
+ <w>nguyễn trãi</w>
+ <w>quốc tế bắc hà</w>
+ <w>tài chính ngân hàng</w>
+ <w>thành tây</w>
+ <w>thành đô</w>
+ <w>công nghệ và quản lý hữu nghị</w>
+    </body>
+</corpus>
