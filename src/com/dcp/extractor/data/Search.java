@@ -19,7 +19,7 @@ public class Search {
 
     public String getStreet() {
         if (this.street.length() > 0) {
-            boolean condition = ((this.street.length() < 3 || isNumeric(this.street)) && "duong".equals(this.prefix));
+            boolean condition = (this.street.length() < 3 || isNumeric(this.street)) && "duong".equals(this.prefix);
             if((this.street.length() > 3) || condition){
                 return "|"+this.street+"|";
             }

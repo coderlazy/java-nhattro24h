@@ -16,31 +16,43 @@ import java.util.List;
  */
 public class Connector {
 
-    public static Connector connector = new Connector();
-    private String user = "lazycoder";
-    private String password = "1";
-    private String port = "3000";
-    public Connection connection;
-
-    public Connector() {
-
+    private static Connector connector = null;
+    private static final String user = "lazycoder";
+    private static final String password = "1";
+    private static final String port = "3000";
+    private static Connection connection=null;
+    
+    private Connector(){
+        
     }
 
-    public Connection ConnectDB() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
+    private static Connection ConnectDB() throws ClassNotFoundException, InstantiationException, IllegalAccessException, SQLException {
         String url = "jdbc:mysql://127.0.0.1:3000/nhatro24";
         // Load the Connector/J driver
         Class.forName("com.mysql.jdbc.Driver").newInstance();
         // Establish connection to MySQL
-        this.connection = null;
+        connection = null;
         try {
-            this.connection = DriverManager.getConnection(url, user, password);
+            connection = DriverManager.getConnection(url, user, password);
         } catch (SQLException ex) {
             // handle any errors
             System.out.println("SQLException: " + ex.getMessage());
             System.out.println("SQLState: " + ex.getSQLState());
             System.out.println("VendorError: " + ex.getErrorCode());
         }
-        return this.connection;
+        return connection;
+    }
+
+    public static Connector getInstance() {
+        try{
+            if (connector == null) {
+                connector = new Connector();
+                connection = ConnectDB();
+            }
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+        return connector;
     }
 
     public LocationData runQuery(String query, String column1, String column2) {
@@ -52,7 +64,9 @@ public class Connector {
             if (stmt.execute(query)) {
                 rs = stmt.getResultSet();
                 while (rs.next()) {
-                    locationData = new LocationData(rs.getInt(column1), rs.getString(column2));
+                    locationData = new LocationData();
+                    locationData.setId(rs.getInt(column1));
+                    locationData.setName(rs.getString(column2));
                 }
             }
             // Now do something with the ResultSet ....
@@ -86,10 +100,6 @@ public class Connector {
             }
         }
         return locationData;
-    }
-
-    public static Connector getInstance() {
-        return Connector.connector;
     }
 
     public Connection getConnection() {

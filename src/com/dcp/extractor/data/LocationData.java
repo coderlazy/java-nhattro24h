@@ -13,9 +13,8 @@ public class LocationData {
     private int id;
     private String name;
 
-    public LocationData(int id, String name) {
-        this.name = name;
-        this.id = id;
+    public LocationData() {
+      
     }
 
     public int getId() {

@@ -65,7 +65,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         App app = new App();
-        Connector cnn = new Connector();
+        Connector cnn = Connector.getInstance();
 //        cnn.runQuery("select * from wards");
         if (CRAWL) {
             app.extractPost();
@@ -78,7 +78,7 @@ public class App {
 
             app.anlanyticPost(json, "data");
         }
-        System.out.println("x");
+        System.out.println("done");
 //        sout`
     }
 
@@ -100,31 +100,45 @@ public class App {
 //                System.out.println("Nước : " + taggedWord.get(i).getText());
 //            }
 //        }
-        System.out.println(getLocation(taggedWord));
+        getLocation(taggedWord);
     }
 
     @SuppressWarnings("empty-statement")
     public String getLocation(List<TaggedWord> taggedWord) {
         String value;
-        Search search  = new Search();
-        String streets = "";
+        Search search = new Search();
+        String streets="street: ";
+        Streets street = new Streets();
+        String [] arrayStreet = {""};
+        List<String> listStreet = new ArrayList<>();
+        HashMap<String, Integer> map = new HashMap();
         for (int i = 0; i < taggedWord.size(); i++) {
-            streets = "ms: " + i + " street: |";
             value = filterVNString(taggedWord.get(i).getText());
             if (inArray(PREFIX_PLACE, value)) {
                 for (int j = i + 1; j < taggedWord.size(); j++) {
                     value = filterVNString(taggedWord.get(j).getText());
-                    search.setStreet(value);
-                    String tempStreet = search.getStreet();
-                    System.out.println("tempStreet: " + tempStreet);
-                    if (!inArray(PREFIX_PLACE, value) && tempStreet.length() > 0) {
-                        streets += tempStreet + "|";
+                    LocationData ld = street.findLocation(2, value);
+                    value = (ld != null) ? ld.getName() : "";
+                    if (!inArray(PREFIX_PLACE, value) && value.length() > 0 && !inArray(arrayStreet, value)) {
+                        search.setStreet(value);
+                        String tempStreet = search.getStreet();
+                        streets += (tempStreet.length() > 0) ? tempStreet : "";
+                        map.put(tempStreet,1);
                     }
-                    i = j;
                 }
             }
+            
         }
-        return streets;
+        Set set = map.entrySet();
+        Iterator i = set.iterator();
+      // Display elements
+      while(i.hasNext()) {
+         Map.Entry me = (Map.Entry)i.next();
+         System.out.print(me.getKey() + ": ");
+         System.out.println(me.getValue());
+      }
+//        System.out.println(streets);
+        return "";
     }
 
     public void typeOfPost(String message) {

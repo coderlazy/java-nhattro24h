@@ -10,18 +10,19 @@ package com.dcp.extractor.data;
  * @author LazyCode
  */
 public class Streets extends LocationData implements Location {
-
-    public Streets(int id, String name) {
-        super(id, name);
+    
+    public Streets() {
+        
     }
+    
 
     @Override
     public LocationData findLocation(int idProvince, String keyWord) {
         Connector cnn = Connector.getInstance();
-        String query = "select * from `provinces` left join `districts` on `districts`.`province_id` "
+        String query = "select streets.id, streets.name from `provinces` left join `districts` on `districts`.`province_id` "
                 + "= `provinces`.`id` left join `streets` on `streets`.`district_id` "
                 + "= `districts`.`id` where `provinces`.`id` "
-                + "= " + idProvince + " and `streets`.`name_search` = " + keyWord;
+                + "= " + idProvince + " and `streets`.`name_search` = \"" + keyWord+"\"";
         return cnn.runQuery(query, "id", "name");
     }
 

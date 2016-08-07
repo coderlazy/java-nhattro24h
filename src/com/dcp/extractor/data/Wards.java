@@ -11,8 +11,8 @@ package com.dcp.extractor.data;
  */
 public class Wards extends LocationData implements Location{
 
-    public Wards(int id, String name) {
-        super(id, name);
+    public Wards() {
+        
     }
     
     @Override
