@@ -35,10 +35,15 @@ public class App {
     public static String[] WORD_LEASE = {"cho thuê nhà", "cho thuê"};
     public static String[] WORD_TENANT = {"cần thuê nhà", "cần thuê", "cần tìm", "cần thuê phong"};
     public static String[] WORD_DUSTY = {"thanh lý", "sim", "bán"};
+    public static String[] PREFIX_PLACE = {"o", "khu vuc", "tai", "dia chi", "ngo", "đc", "khu", "gan", "duong"};
     public static int LEASE = 1;
     public static int TENANT = 2;
     public static int DUSTY = 3;
     public int countMessage = 0;
+
+    public App() {
+
+    }
 
     public static Configuration createConfiguration() {
         ConfigurationBuilder confBuilder = new ConfigurationBuilder();
@@ -58,8 +63,10 @@ public class App {
         return configuration;
     }
 
-    public static void main(String[] args) throws IOException, ParseException, FacebookException {
+    public static void main(String[] args) throws Exception {
         App app = new App();
+        Connector cnn = new Connector();
+//        cnn.runQuery("select * from wards");
         if (CRAWL) {
             app.extractPost();
         } else {
@@ -68,67 +75,56 @@ public class App {
             while (scanner.hasNextLine()) {
                 json += scanner.nextLine();
             }
-            app.anlanyticPost(json, "data", app);
+
+            app.anlanyticPost(json, "data");
         }
-//        
+        System.out.println("x");
+//        sout`
     }
 
-    public void anlanyticPost(String json, String key, App app) throws ParseException {
-        JSONParser jp = new JSONParser();
-        try {
-            Object obj = jp.parse(json);
-            JSONObject jsonObject = (JSONObject) obj;
-            JSONArray listOfStates = (JSONArray) jsonObject.get(key);
-            Iterator<Object> iterator = listOfStates.iterator();
-            String message = "";
-            while (iterator.hasNext()) {
-                message = iterator.next().toString();
-                app.anlanyticPost(message, "message", app);
-                if (key.equals("message")) {
-                    app.getDataMessage(message, "a", app);
-                    System.out.println("=================");
-                }
-            }
-        } catch (Exception e) {
-        }
+    public void anlanyticPost(String json, String key) throws ParseException {
+
     }
 
-    public void getDataMessage(String message, String key, App app) throws ParseException {
-        JSONParser jp = new JSONParser();
-        try {
-            Object obj = jp.parse(message);
-            JSONArray jsonAray = (JSONArray) obj;
-            List<DataMessage> listData = new ArrayList<>();
-            DataMessage dm;
-            for (int i = 0; i < jsonAray.size(); i++) {
-                JSONParser jp2 = new JSONParser();
-                Object obj2 = jp.parse(jsonAray.get(i).toString());
-                JSONObject jsonObject = (JSONObject) obj2;
-                dm = new DataMessage();
-                dm.setRuleName(jsonObject.get("ruleName").toString());
-                dm.setValue(jsonObject.get("value").toString());
-                listData.add(dm);
-            }
-            app.anlanyticMessage(listData, app);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
-    }
-
-    public void anlanyticMessage(List<DataMessage> listDataMessage, App app) {
+    public void anlanyticMessage(List<TaggedWord> taggedWord) {
         countMessage++;
         System.out.println("Message " + countMessage);
-        for (int i = 1; i < listDataMessage.size(); i++) {
-            if (app.detectPrice(listDataMessage.get(i).getRuleName(), listDataMessage.get(i - 1).getValue(), "room")) {
-                System.out.println("Giá : " + listDataMessage.get(i).getValue());
-            }
-            if (app.detectPrice(listDataMessage.get(i).getRuleName(), listDataMessage.get(i - 1).getValue(), "electricty")) {
-                System.out.println("Điện : " + listDataMessage.get(i).getValue());
-            }
-            if (app.detectPrice(listDataMessage.get(i).getRuleName(), listDataMessage.get(i - 1).getValue(), "warter")) {
-                System.out.println("Nước : " + listDataMessage.get(i).getValue());
+//        for (int i = 1; i < taggedWord.size(); i++) {
+//            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "room")) {
+//                System.out.println("Giá : " + taggedWord.get(i).getText());
+//            }
+//            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "electricty")) {
+//                System.out.println("Điện : " + taggedWord.get(i).getText());
+//            }
+//            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "warter")) {
+//                System.out.println("Nước : " + taggedWord.get(i).getText());
+//            }
+//        }
+        System.out.println(getLocation(taggedWord));
+    }
+
+    @SuppressWarnings("empty-statement")
+    public String getLocation(List<TaggedWord> taggedWord) {
+        String value;
+        Search search  = new Search();
+        String streets = "";
+        for (int i = 0; i < taggedWord.size(); i++) {
+            streets = "ms: " + i + " street: |";
+            value = filterVNString(taggedWord.get(i).getText());
+            if (inArray(PREFIX_PLACE, value)) {
+                for (int j = i + 1; j < taggedWord.size(); j++) {
+                    value = filterVNString(taggedWord.get(j).getText());
+                    search.setStreet(value);
+                    String tempStreet = search.getStreet();
+                    System.out.println("tempStreet: " + tempStreet);
+                    if (!inArray(PREFIX_PLACE, value) && tempStreet.length() > 0) {
+                        streets += tempStreet + "|";
+                    }
+                    i = j;
+                }
             }
         }
+        return streets;
     }
 
     public void typeOfPost(String message) {
@@ -152,51 +148,20 @@ public class App {
         ResponseList<Post> feeds = facebookClient.getFeed("451604054903475");
         VietTokenizer tokenizer = new VietTokenizer("tokenizer.properties");
         FileWriter writter = new FileWriter("out.txt");
-//        FileWriter writter1 = new FileWriter("thue.txt");
-//        FileWriter writter2 = new FileWriter("chothue.txt");
-//        FileWriter writter3 = new FileWriter("oghep.txt");
-//        FileWriter writter4 = new FileWriter("timoghep.txt");
-//        FileWriter writter5 = new FileWriter("spam.txt");
-//        Scanner sc = new Scanner(System.in);
-        /* Processing post by post */
         int count = 0;
-        writter.write("[");
         for (int countPage = 0; countPage < MAX_PAGE; countPage++) {
             for (int i = 0; i < feeds.size(); i++) {
                 Post post = feeds.get(i);
                 count++;
                 String message = post.getMessage();
-//                message = (message == null) ? "" : message.replaceAll("\\s+", " ");
                 message = (message == null) ? "" : message;
-                //#DucMV 160730 Test
-                //  String [] s = message.split(" ");
-//                String message1 = "";
-//                for(String x: s){
-//                    if(x.equals("")){
-//                        continue;
-//                    }
-//                    x=x.toLowerCase();
-//                    x=x.substring(0,1).toUpperCase() + x.substring(1).toLowerCase();                     
-//                    message1 += x + " ";
-//                    
-//                }
-//                System.out.println("________________________________________________________");
+                System.out.println(message);
                 processing(tokenizer, message, writter);
-//                writter.write("\r\n\r\n\r\n__________________________________________\r\n");
-//                process(sc, message, writter1, writter2, writter3, writter4, writter5);
-
             }
             Paging<Post> paging = feeds.getPaging();
             feeds = facebookClient.fetchNext(paging);
         }
-        writter.write("]");
         writter.close();
-//        writter1.close();
-//        writter2.close();
-//        writter3.close();
-//        writter4.close();
-//        writter5.close();
-//        sc.close();
     }
 
     public boolean detectPrice(String rule, String aboveValue, String type) {
@@ -215,10 +180,7 @@ public class App {
                 arrayString = new String[0];
                 break;
         }
-        if (rule.equals("number2") && inArray(arrayString, aboveValue.toLowerCase())) {
-            return true;
-        }
-        return false;
+        return rule.equals("number2") && inArray(arrayString, aboveValue.toLowerCase());
     }
 
     public static boolean inArray(String[] arrayString, String value) {
@@ -239,6 +201,14 @@ public class App {
         return false;
     }
 
+    private void processing(VietTokenizer tokenizer, String message, FileWriter writter) throws IOException {
+        String[] listString = tokenizer.tokenize(message);
+        Tokenizer a = tokenizer.getTokenizer();
+        List<TaggedWord> result = a.getResult();
+        anlanyticMessage(result);
+    }
+
+    //Phung's function
     private static void process(Scanner sc, String message, FileWriter writter1, FileWriter writter2, FileWriter writter3, FileWriter writter4, FileWriter writter5) throws IOException {
         System.out.println(message);
         System.out.println("_____________________");
@@ -288,21 +258,15 @@ public class App {
         }
     }
 
-    private static void processing(VietTokenizer tokenizer, String message, FileWriter writter) throws IOException {
-        String[] listString = tokenizer.tokenize(message);
-        Tokenizer a = tokenizer.getTokenizer();
-        List<TaggedWord> result = a.getResult();
-        List<DataMessage> listData = new ArrayList<DataMessage>();
-        DataMessage data;
-        for (TaggedWord d : result) {
-            data = new DataMessage();
-            data.setRuleName(d.getRule().getName());
-            data.setValue(d.getText());
-            listData.add(data);
-        }
-        String json = "{\"message\":[";
-        json += new Gson().toJson(listData);
-        json += "]}, ";
-        writter.write(json);
+    public String filterVNString(String string) {
+        string = string.replaceAll("[̣̀̃̉́]", "");
+        string = string.replaceAll("̣₫", "đ");
+        string = string.replaceAll("[iìỉĩíịj]", "i");
+        string = string.replaceAll("[eèẻẽéẹêềểễếệ]", "e");
+        string = string.replaceAll("[aàảãáạăằẳẵắặâầẩẫấậ]", "a");
+        string = string.replaceAll("[uùủũúụưừửữứự]", "u");
+        string = string.replaceAll("[oòỏõóọôồổỗốộơờởỡớợ]", "o");
+        string = string.replaceAll("[yỳỷỹýỵ]", "y");
+        return string;
     }
 }

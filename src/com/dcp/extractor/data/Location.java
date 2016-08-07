@@ -9,6 +9,6 @@ package com.dcp.extractor.data;
  *
  * @author LazyCode
  */
-class FileNotFoundException {
-    
+public interface Location {
+    public LocationData findLocation(int idProvince, String keyWord);
 }
