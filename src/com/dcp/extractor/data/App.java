@@ -168,6 +168,7 @@ public class App {
                 Post post = feeds.get(i);
                 count++;
                 String message = post.getMessage();
+                System.out.println(post.getId());
                 message = (message == null) ? "" : message;
                 System.out.println(message);
                 processing(tokenizer, message, writter);
