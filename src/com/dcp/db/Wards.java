@@ -3,7 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dcp.extractor.data;
+package com.dcp.db;
+
+import com.dcp.db.Connector;
+import com.dcp.extractor.data.Location;
+import com.dcp.extractor.data.LocationData;
 
 /**
  *

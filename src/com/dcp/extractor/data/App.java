@@ -1,5 +1,9 @@
 package com.dcp.extractor.data;
 
+import com.dcp.db.Streets;
+import com.dcp.db.Search;
+import com.dcp.db.Connector;
+import com.dcp.db.RentalHouse;
 import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException;
@@ -27,14 +31,14 @@ import vn.hus.nlp.tokenizer.tokens.TaggedWord;
 
 public class App {
 
-    public static int MAX_PAGE = 10;
+    public static int MAX_PAGE = 50;
     public static boolean CRAWL = true;
-    public static String[] WORD_ECLECTRICTY = {"điện:", "đ:", "điện", "đ", "Điện", "Đ", "Điện"};
-    public static String[] WORD_WARTER = {"nước:", "nc:", "n:", "nước", "nc", "n"};
-    public static String[] WORD_ROM_PRICE = {"giá", "₫", "giá:", "₫:", "phòng"};
-    public static String[] WORD_LEASE = {"cho thuê nhà", "cho thuê"};
-    public static String[] WORD_TENANT = {"cần thuê nhà", "cần thuê", "cần tìm", "cần thuê phong"};
-    public static String[] WORD_DUSTY = {"thanh lý", "sim", "bán"};
+    public static String[] WORD_ECLECTRICTY = {"dien:", "d:", "d", "Đien", "Đ"};
+    public static String[] WORD_WARTER = {"nuoc:", "nc:", "n:", "nuoc", "nc", "n"};
+    public static String[] WORD_ROM_PRICE = {"gia", "₫", "gia:", "₫:", "phong"};
+    public static String[] WORD_LEASE = {"cho thue nha", "cho thue"};
+    public static String[] WORD_TENANT = {"can thue nha", "can thue", "can tim", "can thue phong"};
+    public static String[] WORD_DUSTY = {"thanh ly", "sim"};
     public static String[] PREFIX_PLACE = {"o", "khu vuc", "tai", "dia chi", "ngo", "đc", "khu", "gan", "duong"};
     public static int LEASE = 1;
     public static int TENANT = 2;
@@ -50,9 +54,6 @@ public class App {
 
         confBuilder.setDebugEnabled(true);
 
-        // String url = "https://graph.facebook.com/v2.2/";
-        // System.out.println(url);
-        // confBuilder.setRestBaseURL(url);
         confBuilder.setOAuthAppId("1543380259298935");
         confBuilder.setOAuthPermissions(
                 "user_groups,user_events,user_managed_groups,rsvp_event,publish_pages,user_photos,user_posts,user_friends");
@@ -65,8 +66,10 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         App app = new App();
-        Connector cnn = Connector.getInstance();
-//        cnn.runQuery("select * from wards");
+        app.CrawlData(app);
+    }
+    
+    public void CrawlData(App app) throws Exception {
         if (CRAWL) {
             app.extractPost();
         } else {
@@ -75,41 +78,22 @@ public class App {
             while (scanner.hasNextLine()) {
                 json += scanner.nextLine();
             }
-
             app.anlanyticPost(json, "data");
         }
         System.out.println("done");
-//        sout`
     }
 
     public void anlanyticPost(String json, String key) throws ParseException {
 
     }
 
-    public void anlanyticMessage(List<TaggedWord> taggedWord) {
-        countMessage++;
-        System.out.println("Message " + countMessage);
-//        for (int i = 1; i < taggedWord.size(); i++) {
-//            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "room")) {
-//                System.out.println("Giá : " + taggedWord.get(i).getText());
-//            }
-//            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "electricty")) {
-//                System.out.println("Điện : " + taggedWord.get(i).getText());
-//            }
-//            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "warter")) {
-//                System.out.println("Nước : " + taggedWord.get(i).getText());
-//            }
-//        }
-        getLocation(taggedWord);
-    }
-
     @SuppressWarnings("empty-statement")
     public String getLocation(List<TaggedWord> taggedWord) {
         String value;
         Search search = new Search();
-        String streets="street: ";
+        String streets = "";
         Streets street = new Streets();
-        String [] arrayStreet = {""};
+        String[] arrayStreet = {""};
         List<String> listStreet = new ArrayList<>();
         HashMap<String, Integer> map = new HashMap();
         for (int i = 0; i < taggedWord.size(); i++) {
@@ -122,23 +106,24 @@ public class App {
                     if (!inArray(PREFIX_PLACE, value) && value.length() > 0 && !inArray(arrayStreet, value)) {
                         search.setStreet(value);
                         String tempStreet = search.getStreet();
-                        streets += (tempStreet.length() > 0) ? tempStreet : "";
-                        map.put(tempStreet,1);
+                        if (tempStreet.length() > 0) {
+                            map.put("|" + tempStreet + "|", 1);
+                        }
                     }
                 }
             }
-            
+
         }
         Set set = map.entrySet();
         Iterator i = set.iterator();
-      // Display elements
-      while(i.hasNext()) {
-         Map.Entry me = (Map.Entry)i.next();
-         System.out.print(me.getKey() + ": ");
-         System.out.println(me.getValue());
-      }
-//        System.out.println(streets);
-        return "";
+//         Display elements
+        while (i.hasNext()) {
+            Map.Entry me = (Map.Entry) i.next();
+            if (me.getKey() != null) {
+                streets += me.getKey();
+            }
+        }
+        return streets;
     }
 
     public void typeOfPost(String message) {
@@ -180,6 +165,7 @@ public class App {
     }
 
     public boolean detectPrice(String rule, String aboveValue, String type) {
+        System.out.print(aboveValue);
         String[] arrayString;
         switch (type) {
             case "electricty":
@@ -198,7 +184,7 @@ public class App {
         return rule.equals("number2") && inArray(arrayString, aboveValue.toLowerCase());
     }
 
-    public static boolean inArray(String[] arrayString, String value) {
+    public boolean inArray(String[] arrayString, String value) {
         for (int i = 0; i < arrayString.length; i++) {
             if (value.equals(arrayString[i])) {
                 return true;
@@ -220,7 +206,39 @@ public class App {
         String[] listString = tokenizer.tokenize(message);
         Tokenizer a = tokenizer.getTokenizer();
         List<TaggedWord> result = a.getResult();
-        anlanyticMessage(result);
+        System.out.println(result);
+        RentalHouse rh = new RentalHouse();
+        RentalHouseObject rho;
+        rho = anlanyticMessage(result, message);
+        if (rho != null) {
+            rh.create(rho);
+        }
+    }
+
+    public RentalHouseObject anlanyticMessage(List<TaggedWord> taggedWord, String message) {
+//        RentalHouseObject rho =
+        String price = "";
+        String electricPrice = "";
+        String waterPrice = "";
+        String location = "";
+        for (int i = 1; i < taggedWord.size(); i++) {
+            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "room")) {
+                price = taggedWord.get(i).getText();
+            }
+            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "electricty")) {
+                electricPrice = taggedWord.get(i).getText();
+            }
+            if (this.detectPrice(taggedWord.get(i).getRule().getName(), taggedWord.get(i - 1).getText(), "warter")) {
+                waterPrice = taggedWord.get(i).getText();
+            }
+        }
+        location = getLocation(taggedWord);
+        System.out.print("Message: " + message);
+        RentalHouseObject rho = null;
+        if (message.length() > 0) {
+            rho = new RentalHouseObject(message.substring(0, 5), message, price, price, "updating", location, "Ha Noi", waterPrice, electricPrice, "updating", null, null, true, "none");
+        }
+        return rho;
     }
 
     //Phung's function

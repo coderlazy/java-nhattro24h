@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dcp.extractor.data;
+package com.dcp.db;
 
 /**
  *
@@ -21,7 +21,7 @@ public class Search {
         if (this.street.length() > 0) {
             boolean condition = (this.street.length() < 3 || isNumeric(this.street)) && "duong".equals(this.prefix);
             if((this.street.length() > 3) || condition){
-                return "|"+this.street+"|";
+                return this.street;
             }
         }
         return "";

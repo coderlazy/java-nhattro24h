@@ -65,7 +65,7 @@
         <w msd="pound">£</w>
 		<w msd="ewnormal">((điện nước giá dân)|(điện, nước giá dân)|(giá dân)|(gia dan))</w>
 		<w msd="eprice">(Điện|điện|đ|đien|dien)\s*\w*(:)?\s*((\d+([\.,]\d+)*)(k|nghìn|nghin|ng)?(\d*))</w>
-		<w msd="wprice">(Nước|nước|nc|nuoc)\s*(:)?\s*((\d+([\.,]\d+)*)(k|nghìn|nghin|ng)?(\d*))</w>
+		<w msd="wprice">(Nước|nước|nc|nuoc|Giá nước|giá nước)\s*(:)?\s*((\d+([\.,]\d+)*)(k|nghìn|nghin|ng|đ)?(\d*))</w>
 		<w msd="roomprice">(phòng|Phòng| phòng giá|Phòng giá|giá|Giá)?(&lt;|&gt;|~)?([0-9]*)?[0-9]+([\.,]\d+)*(\s|tỉ|tỷ|triệu|ngàn|nghìn|trăm|chục|tr|cu|củ|k\d+|nghìn|nghin|lít|lit|t\d+)*(([0-9]*)?[0-9]+([\.,]\d+)*)?</w>
     </body>
 </corpus>

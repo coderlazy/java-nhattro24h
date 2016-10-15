@@ -3,8 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.dcp.extractor.data;
+package com.dcp.db;
 
+import com.dcp.extractor.data.LocationData;
 import java.sql.*;
 import java.math.*;
 import java.util.ArrayList;
