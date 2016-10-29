@@ -19,6 +19,8 @@ import java.util.Set;
 import vn.hus.nlp.tokenizer.Tokenizer;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import vn.hus.nlp.tokenizer.tokens.TaggedWord;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -27,7 +29,7 @@ import vn.hus.nlp.tokenizer.tokens.TaggedWord;
 public class ExtractorFaceBookPost {
 
     public static String[] WORD_ECLECTRICTY = {"dien:", "d:", "d", "Dien", "D", "dien", "điện:", "đ:", "đ", "Điện", "D", "điện"};
-    public static String[] WORD_WARTER = {"nuoc:", "nc:", "n:", "nuoc", "nc", "n", "nước:", "nc:", "n:", "nước"};
+    public static String[] WORD_WARTER = {"nuoc:", "nc:", "n:", "nuoc", "nc", "n", "nước:", "nc:", "nước"};
     public static String[] WORD_ROM_PRICE = {"giá", "₫", "giá:", "phong", "gia", "gia:", "₫:", "phòng"};
     public static String[] WORD_LEASE = {"cho thue nha", "cho thue"};
     public static String[] WORD_TENANT = {"can thue nha", "can thue", "can tim", "can thue phong"};
@@ -82,7 +84,16 @@ public class ExtractorFaceBookPost {
         String waterPrice = "";
         for (int i = 1; i < taggedWord.size(); i++) {
             if ("wprice".equals(taggedWord.get(i).getRule().getName())) {
-                System.out.println(taggedWord.get(i).getText());
+                return taggedWord.get(i).getText();
+            }
+        }
+        return waterPrice;
+    }
+
+    public String detectPriceElectric(List<TaggedWord> taggedWord) {
+        String waterPrice = "";
+        for (int i = 1; i < taggedWord.size(); i++) {
+            if ("eprice".equals(taggedWord.get(i).getRule().getName())) {
                 return taggedWord.get(i).getText();
             }
         }
@@ -97,6 +108,7 @@ public class ExtractorFaceBookPost {
                 break;
             case "warter":
                 arrayString = WORD_WARTER;
+                break;
             case "room":
                 arrayString = WORD_ROM_PRICE;
                 break;
@@ -167,4 +179,12 @@ public class ExtractorFaceBookPost {
         return string;
     }
 
+    public String regex(String regex,  String content) {
+        Pattern pattern = Pattern.compile(regex);
+        Matcher matcher = pattern.matcher(content);
+        while (matcher.find()) {
+            return matcher.group(0);
+        }
+        return "";
+    }
 }
