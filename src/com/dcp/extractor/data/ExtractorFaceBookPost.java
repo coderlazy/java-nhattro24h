@@ -35,6 +35,7 @@ public class ExtractorFaceBookPost {
     public static String[] WORD_TENANT = {"can thue nha", "can thue", "can tim", "can thue phong"};
     public static String[] WORD_DUSTY = {"thanh ly", "sim"};
     public static String[] PREFIX_PLACE = {"o", "khu vuc", "tai", "dia chi", "ngo", "đc", "khu", "gan", "duong"};
+    public static String[] STOP_WORD = {"phong", "gia", "dien", "nuoc", "nc", "gia thue phong", "cho thue", "phong gia"};
 
     public ExtractorFaceBookPost() {
     }
@@ -80,24 +81,42 @@ public class ExtractorFaceBookPost {
 //        return rho;
     }
 
-    public String detectPriceWater(List<TaggedWord> taggedWord) {
-        String waterPrice = "";
-        for (int i = 1; i < taggedWord.size(); i++) {
-            if ("wprice".equals(taggedWord.get(i).getRule().getName())) {
-                return taggedWord.get(i).getText();
-            }
+    public String detectPriceWater(String message) {
+        message = this.filterVNString(message);
+        String regex = "(nc|nuoc)\\s*(:)?\\s*((\\d+([\\.,]\\d+)*)(k|nghìn|nghin|ng|d)?(\\d*))";
+        Matcher matcher = this.regex(regex, message);
+        System.out.println(matcher);
+        if (matcher.find()) {
+            return matcher.group(0);
         }
-        return waterPrice;
+        return "";
     }
 
-    public String detectPriceElectric(List<TaggedWord> taggedWord) {
-        String waterPrice = "";
-        for (int i = 1; i < taggedWord.size(); i++) {
-            if ("eprice".equals(taggedWord.get(i).getRule().getName())) {
-                return taggedWord.get(i).getText();
+    public String detectPriceElectric(String message) {
+        message = this.filterVNString(message);
+        String regex = "(d|dien)\\s*(:)?\\s*((\\d+([\\.,]\\d+)*)(k|nghìn|nghin|ng|d|)?(\\d*))";
+        Matcher matcher = this.regex(regex, message);
+        if (matcher.find()) {
+            return matcher.group(0);
+        }
+        return "";
+    }
+
+    public String detectPriceHouse(String message) {
+        message = this.filterVNString(message);
+        String regex = "(gia thue phong|cho thue|phong gia|gia|phong)(&lt;|&gt;|~)?\\s*(:?)\\s*([0-9]*)?[0-9]+([\\.,]\\d+)*(\\s|tỉ|tỷ|triệu|ngàn|nghìn|trăm|chục|tr|trieu|cu|củ|k\\d+|nghìn|nghin|lít|lit|t\\d+)*(([0-9]*)?[0-9]+([\\.,]\\d+)*)*";
+        Matcher matcher = this.regex(regex, message);
+        String rs = "";
+        if (matcher.find()) {
+            rs += matcher.group(0);
+            for (int i = 1; i <= matcher.groupCount(); i++) {
+                if (matcher.group(i) != null && matcher.group(i) != "") {
+                    rs += "-" + matcher.group(i);
+                }
             }
         }
-        return waterPrice;
+        System.out.println("rs: " + matcher.find());
+        return rs;
     }
 
     public boolean detectPrice(String rule, String aboveValue, String type) {
@@ -179,12 +198,72 @@ public class ExtractorFaceBookPost {
         return string;
     }
 
-    public String regex(String regex,  String content) {
+    public Matcher regex(String regex, String content) {
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(content);
-        while (matcher.find()) {
-            return matcher.group(0);
+        return matcher;
+    }
+
+    public String converPrice(String price) {
+        for (int i = 0; i < STOP_WORD.length; i++) {
+            price = price.replaceAll(STOP_WORD[i], "");
         }
-        return "";
+        price = price.replaceAll("\\s+", "");
+        String UNIT = "(\\w+)";
+        Pattern PRICE_TYPE_1 = Pattern.compile("(\\d+)" + UNIT + "(\\d+)");
+        Pattern PRICE_TYPE_2 = Pattern.compile("(\\d+)[,.](\\d+)" + UNIT);
+        Pattern PRICE_TYPE_3 = Pattern.compile("(\\d+)" + UNIT);
+
+        Matcher matcher = PRICE_TYPE_1.matcher(price);
+        String array[] = {"0", "k", "0"};
+        if (matcher.find()) {
+            for (int i = 1; i <= matcher.groupCount(); i++) {
+                array[i - 1] = matcher.group(i);
+            }
+            double x = Double.parseDouble("0." + array[2]);
+            return "" + (Double.parseDouble(array[0]) + x) * this.getUnit(array[1]);
+        } else {
+            matcher = PRICE_TYPE_2.matcher(price);
+            if (matcher.find()) {
+                for (int i = 1; i <= matcher.groupCount(); i++) {
+                    array[i - 1] = matcher.group(i);
+                }
+                double x = Double.parseDouble("0." + array[1]);
+                return "" + (Double.parseDouble(array[0]) + x) * this.getUnit(array[2]);
+            } else {
+                matcher = PRICE_TYPE_3.matcher(price);
+                if (matcher.find()) {
+                    for (int i = 1; i <= matcher.groupCount(); i++) {
+                        array[i - 1] = matcher.group(i);
+                    }
+                    return "" + Integer.parseInt(array[0]) * this.getUnit(array[1]);
+                }
+            }
+        }
+        return "0";
+    }
+
+    public int getUnit(String unit) {
+        unit = unit.trim();
+        switch (unit) {
+            case "k":
+            case "nghin":
+                return 1000;
+            case "cu":
+            case "tr":
+            case "trieu":
+                return 1000_000;
+
+            default:
+                return 1;
+        }
+    }
+
+    public static void main(String[] args) {
+        ExtractorFaceBookPost app = new ExtractorFaceBookPost();
+        String text[] = {"75k2", "2k", "3 cu", "4,5 cu", "4,5", "3.5cu"};
+        for (String x : text) {
+            System.out.println(app.converPrice(x));
+        }
     }
 }

@@ -46,8 +46,11 @@ public class ExtractorFaceBookPostTest {
                 + "- Giá 1,6 triệu \n"
                 + "Vậy quý anh chị em nào có nhu cầu thì liên hệ với mình qua sdt : 0973501663 hoặc cmt ngay dưới tin đăng này.Xin cám ơn ạ";
         taggedWord = ep.processing(tokenize, message);
-        String regex = "(nước|nc|nuoc|giá nước|tiền nước|tien nuoc)\\s*(:)?\\s*((\\d+([\\.,]\\d+)*)(k|nghìn|nghin|ng|đ)?(\\d*))";
-        ep.regex(regex, message);
+//        String regex = "(Điện|điện|đ|đien|dien)\\s*(:)?\\s*((\\d+([\\.,]\\d+)*)(k|nghìn|nghin|ng|d|)?(\\d*))";
+//        message = "Điện: 3.500đ/1kwh.";
+//        message = ep.filterVNString(message.toLowerCase());
+//        System.out.println(message);
+//        System.out.println(ep.regex(regex, message));
     }
 
     @AfterClass
@@ -61,7 +64,10 @@ public class ExtractorFaceBookPostTest {
     @After
     public void tearDown() {
     }
-
+    @Test
+    public void converPriceTest(){
+        assertEquals("70k", ep.converPrice("nuoc 70k"));
+    }
     @Test
     public void detectPriceWaterCheck() throws IOException {
         String pWarter = "giá nước 75.000đ";
@@ -74,10 +80,8 @@ public class ExtractorFaceBookPostTest {
                 + "Tiền nước 70k / tháng\n"
                 + "Tiền mạng 70k/ tháng \n"
                 + "Có nhu cầu thuê liên hệ 0963 292 123";
-        VietTokenizer tokenize2 = new VietTokenizer();
-        taggedWord = ep.processing(tokenize2, message2.toLowerCase());
-        assertEquals("tiền nước 70k", ep.detectPriceWater(taggedWord));
-        String m3 = "Vì anh mình về quê lấy vợ mình ở 1 mình không đủ khoản "
+        assertEquals("nuoc 70k", ep.detectPriceWater(message2.toLowerCase()));
+        message2 = "Vì anh mình về quê lấy vợ mình ở 1 mình không đủ khoản "
                 + "nên mình nhượng phòng như trong hình giá "
                 + "3 triệu nguyên tầng 3 2 phòng.... .. "
                 + "chung chủ điện chia đều nhau đầu người "
@@ -87,9 +91,8 @@ public class ExtractorFaceBookPostTest {
                 + "Giờ Giấc thoải mái có chìa khóa riêng.. "
                 + "😊😊😊😊 có thể chuyển vào ngày 8-9 tháng 11 ...."
                 + " ở Trần Cung- Cầu Giấy.";
-        taggedWord = ep.processing(tokenize2, m3.toLowerCase());
-        assertEquals("nước 50k", ep.detectPriceWater(taggedWord));
-        String m4 = "cho thuê phòng ĐẸP - đầy đủ đồ - ngõ 95 Chùa Bộc🎶🎶\n"
+        assertEquals("nuoc 50k", ep.detectPriceWater(message2.toLowerCase()));
+        message2 = "cho thuê phòng ĐẸP - đầy đủ đồ - ngõ 95 Chùa Bộc🎶🎶\n"
                 + "cón 01 phòng tầng 2 và 1 phòng tầng 7 trong nhà 7 tầng đẹp mới có thang máy, gần các trường Học viện ngân hàng, thủy lợi, công đoàn, đại học y.... gần các tuyến đường trung tâm : ngã tư sở , tây sơn, phạm ngọc thạch, trường chinh..... mặt ngõ to 2 ô tô tránh nhau\n"
                 + "khu vực có đầy đủ tiện ích : sân tenis, bể bơi, sân bóng đá, bóng rổ, tenis...\n"
                 + "- diện tích 22m2, phòng có cửa sổ thoáng\n"
@@ -100,16 +103,14 @@ public class ExtractorFaceBookPostTest {
                 + "- nước 100k / 1 người\n"
                 + "giá cho thuê 3tr2\n"
                 + "liên hệ: 0978688662";
-        taggedWord = ep.processing(tokenize2, m4.toLowerCase());
-        assertEquals("nước 100k", ep.detectPriceWater(taggedWord));
-        m4 = "Phòng trọ tầng 2, 15m2, vệ sinh riêng biệt, nấu ăn, "
+        assertEquals("nuoc 100k", ep.detectPriceWater(message2.toLowerCase()));
+        message2 = "Phòng trọ tầng 2, 15m2, vệ sinh riêng biệt, nấu ăn, "
                 + "phơi đồ ngoài ban công tầng 3 rộng 15m2, "
                 + "có chỗ để xe miễn phí, net 50k, nước 50k, "
                 + "điện chia theo hoá đơn, ở từ 25/10\n"
                 + "Địa chỉ : Ngõ 128C Đại La (ngã 4 vọng) \n"
                 + "Liên hệ : 01687697623";
-        taggedWord = ep.processing(tokenize2, m4.toLowerCase());
-        assertEquals("nước 50k", ep.detectPriceWater(taggedWord));
+        assertEquals("nuoc 50k", ep.detectPriceWater(message2.toLowerCase()));
     }
 
     @Test
@@ -128,9 +129,9 @@ public class ExtractorFaceBookPostTest {
                 + "- nước 100k / 1 người\n"
                 + "giá cho thuê 3tr2\n"
                 + "liên hệ: 0978688662";
-        taggedWordElectric = ep.processing(tokenize2, message2.toLowerCase());
-        assertEquals("điện 3,5k", ep.detectPriceElectric(taggedWordElectric));
-        assertEquals("nước 100k", ep.detectPriceWater(taggedWordElectric));
+        assertEquals("dien 3,5k", ep.detectPriceElectric(message2.toLowerCase()));
+        assertEquals("nuoc 100k", ep.detectPriceWater(message2.toLowerCase()));
+        assertEquals("cho thue 3tr2", ep.detectPriceHouse(message2.toLowerCase()));
         message2 = "Hiện tại nhà mình còn 1 phòng trọ ở tầng 2 trong tòa nhà "
                 + "4 tầng tại số 4B ngõ 31 Yên Hòa.các thông tin chi tiết như sau :\n"
                 + "- Diện tích 15m2 ,sạch sẽ, thoáng mát.\n"
@@ -142,11 +143,11 @@ public class ExtractorFaceBookPostTest {
                 + "- Nhà ở riêng chủ, chỉ cho các bạn nữ thuê.\n"
                 + "- Nhà ngay gần cầu Cót, gần bến xe bus, siêu thị,"
                 + " chợ…gần các trường ĐH Giao thông, Báo chí, Sư phạm…\n"
-                + "- Giá 1,6 triệu \n"
+                + "- Giá 1,6 triệu"
                 + "Vậy quý anh chị em nào có nhu cầu thì liên hệ với mình qua sdt : 0973501663 hoặc cmt ngay dưới tin đăng này.Xin cám ơn ạ";
-        taggedWordElectric = ep.processing(tokenize2, message2.toLowerCase());
-        assertEquals("giá điện 4000đ", ep.detectPriceElectric(taggedWordElectric));
-        assertEquals("giá nước 75.000đ", ep.detectPriceWater(taggedWordElectric));
+        assertEquals("dien 4000d", ep.detectPriceElectric(message2.toLowerCase()));
+        assertEquals("nuoc 75.000d", ep.detectPriceWater(message2.toLowerCase()));
+        assertEquals("gia 1,6 tr", ep.detectPriceHouse(message2.toLowerCase()));
         message2 = "Đầu tháng 10/2016, Bên mình có 1 phòng trống tại địa chỉ: B10, lô 8, Khu ĐT Định Công.\n"
                 + "- Số phòng: 402.\n"
                 + "- Vị trí: Tầng 4(trong nhà 4 tầng).\n"
@@ -167,9 +168,9 @@ public class ExtractorFaceBookPostTest {
                 + "Cam kết: Hình ảnh thực tế, thông tin đầy đủ, chính xác 100%\n"
                 + "Chính chủ, miễn trung gian.\n"
                 + "Liên hệ: Ms Thêu - 0167 635 8366";
-        taggedWordElectric = ep.processing(tokenize2, message2.toLowerCase());
-        assertEquals("điện: 3.500đ", ep.detectPriceElectric(taggedWordElectric));
-        assertEquals("nước: 100.000đ", ep.detectPriceWater(taggedWordElectric));
+        assertEquals("dien: 3.500d", ep.detectPriceElectric(message2.toLowerCase()));
+        assertEquals("nuoc: 100.000d", ep.detectPriceWater(message2.toLowerCase()));
+        assertEquals("gia thue phong: 2.600.000d", ep.detectPriceHouse(message2.toLowerCase()));
         message2 = "Phòng trọ hot mới hoàn thiện nhé\n"
                 + "*Các bạn chú ý đọc kỹ bài viết và đến xem sớm nhất có thể nhé tránh trường hợp hết phòng\n"
                 + "- 5 phòng khép kín tầng 4 giá 1tr3 nền đá hoa rộng 15m2 (1 dãy)\n"
@@ -186,9 +187,9 @@ public class ExtractorFaceBookPostTest {
                 + "* Không thông qua môi giới, xem phòng không mất phí\n"
                 + "Liên hệ : Mr. Nam 0988216480 để check phòng và xem phòng\n"
                 + "Địa chỉ: Số 1 đường mỹ đình (Cạnh cổng ra xe khách bến xe mỹ đình) như trên hình vè";
-        taggedWordElectric = ep.processing(tokenize2, message2.toLowerCase());
-        assertEquals("điện 4,5n", ep.detectPriceElectric(taggedWordElectric));
-        assertEquals("nước 70n", ep.detectPriceWater(taggedWordElectric));
+        assertEquals("dien 4,5", ep.detectPriceElectric(message2.toLowerCase()));
+        assertEquals("nuoc 70", ep.detectPriceWater(message2.toLowerCase()));
+        assertEquals("gia 800k", ep.detectPriceHouse(message2.toLowerCase()));
     }
 
     @Test
