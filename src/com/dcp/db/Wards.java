@@ -26,6 +26,6 @@ public class Wards extends LocationData implements Location{
                 + "= `provinces`.`id` left join `wards` on `wards`.`district_id` "
                 + "= `districts`.`id` where `provinces`.`id` "
                 + "= " + idProvince + " and `wards`.`name_search` = " + keyWord;
-        return cnn.runQuery(query, "id", "name");
+        return cnn.runQueryLoadLocation(query, "id", "name");
     }
 }

@@ -1,5 +1,6 @@
 package com.dcp.db;
 
+import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.MongoCredential;
@@ -31,6 +32,7 @@ public class MongoConector {
         connector = null;
         try {
             connector = new MongoClient(host, port);
+            System.out.println("ok");
 //            connector = new MongoClient(
 //                    new MongoClientURI("mongodb://heroku_s33jfbhv:7jgp00f8t55g4pnec8eu5kgj7j@ds153785.mlab.com:53785/heroku_s33jfbhv")
 //            );
@@ -56,7 +58,6 @@ public class MongoConector {
         database = connector.getDatabase(dbName);
         return database;
     }
-
 //    public void insertRentalhouse(String collectionName) {
 //        collection = database.getCollection(collectionName);
 //        Document doc = new Document("name", "MongoDB")

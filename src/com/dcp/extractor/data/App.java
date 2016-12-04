@@ -3,15 +3,17 @@ package com.dcp.extractor.data;
 import com.dcp.db.Streets;
 import com.dcp.db.Search;
 import com.dcp.db.Connector;
+import com.dcp.db.DistrictsModel;
+import com.dcp.db.ProvinceModel;
 import com.dcp.db.RentalHouse;
+import com.dcp.db.StreetModel;
+import com.dcp.db.WardsModel;
+import com.mongodb.BasicDBObject;
+import static com.mongodb.client.model.Filters.eq;
 import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException;
 import java.util.*;
-
-import com.google.gson.*;
-import org.json.simple.parser.*;
-import org.json.simple.JSONArray;
 
 import facebook4j.Facebook;
 import facebook4j.FacebookException;
@@ -24,7 +26,14 @@ import facebook4j.auth.OAuthAuthorization;
 import facebook4j.auth.OAuthSupport;
 import facebook4j.conf.Configuration;
 import facebook4j.conf.ConfigurationBuilder;
-import org.json.simple.JSONObject;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import org.bson.BSON;
+import org.bson.BsonDocument;
+import org.bson.Document;
+import org.bson.codecs.configuration.CodecRegistry;
+import org.bson.conversions.Bson;
+//import org.json.simple.JSONObject;
 import vn.hus.nlp.tokenizer.Tokenizer;
 import vn.hus.nlp.tokenizer.VietTokenizer;
 import vn.hus.nlp.tokenizer.tokens.TaggedWord;
@@ -66,9 +75,13 @@ public class App {
 
     public static void main(String[] args) throws Exception {
         App app = new App();
-        app.CrawlData(app);
+//        app.CrawlData(app);
+//        app.seedProvinces();
+//        app.seedDistrict();
+//        app.seedWards();
+//        app.seedStreet();
     }
-    
+
     public void CrawlData(App app) throws Exception {
         if (CRAWL) {
             app.extractPost();
@@ -78,13 +91,9 @@ public class App {
             while (scanner.hasNextLine()) {
                 json += scanner.nextLine();
             }
-            app.anlanyticPost(json, "data");
+//            app.anlanyticPost(json, "data");
         }
         System.out.println("done");
-    }
-
-    public void anlanyticPost(String json, String key) throws ParseException {
-
     }
 
     @SuppressWarnings("empty-statement")
@@ -302,4 +311,110 @@ public class App {
         string = string.replaceAll("[yỳỷỹýỵ]", "y");
         return string;
     }
+
+    public void seedStreet() {
+        Connector cnn = Connector.getInstance();
+        String query = "select * from streets join districts on streets.district_id = districts.id";
+        ResultSet rs = null;
+        DistrictsModel dm = new DistrictsModel();
+        Document doc;
+        try {
+            rs = cnn.runQuery(query);
+            while (rs.next()) {
+                StreetModel sm = new StreetModel();
+                doc = dm.collection.find(eq("district_id", rs.getInt("district_id") + "")).first();
+                sm.name = rs.getString("name");
+                sm.street_id = rs.getString("id");
+                sm.district_id = rs.getString("district_id");
+                sm.province_id = rs.getString("province_id");
+                sm.add();
+            }
+            rs.close();
+        } // Now do something with the ResultSet .... // Now do something with the ResultSet ....
+        catch (SQLException ex) {
+            // handle any errors
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
+    }
+
+    public void seedWards() {
+
+        Connector cnn = Connector.getInstance();
+        String query = "select * from wards";
+        ResultSet rs = null;
+        DistrictsModel dm = new DistrictsModel();
+        Document doc;
+        try {
+            rs = cnn.runQuery(query);
+            while (rs.next()) {
+                WardsModel wm = new WardsModel();
+                doc = dm.collection.find(eq("district_id", rs.getInt("district_id") + "")).first();
+                wm.name = rs.getString("name");
+                wm.prefix = rs.getString("pre");
+                wm.ward_id = rs.getString("id");
+                wm.id_ref = doc.get("_id") + "";
+                wm.ref = "districts";
+                wm.add();
+            }
+            rs.close();
+        } // Now do something with the ResultSet .... // Now do something with the ResultSet ....
+        catch (SQLException ex) {
+            // handle any errors
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
+    }
+
+    public void seedDistrict() {
+        Connector cnn = Connector.getInstance();
+        String query = "select * from districts";
+        ResultSet rs = null;
+        ProvinceModel pm = new ProvinceModel();
+        Document doc;
+        try {
+            rs = cnn.runQuery(query);
+            while (rs.next()) {
+                DistrictsModel dm = new DistrictsModel();
+                doc = pm.collection.find(eq("province_id", rs.getInt("province_id"))).first();
+                dm.name = rs.getString("name");
+                dm.id_ref = doc.get("_id") + "";
+                dm.ref = "provinces";
+                dm.district_id = rs.getString("id");
+                dm.add();
+            }
+            rs.close();
+        } // Now do something with the ResultSet .... // Now do something with the ResultSet ....
+        catch (SQLException ex) {
+            // handle any errors
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
+    }
+
+    public void seedProvinces() throws SQLException {
+        Connector cnn = Connector.getInstance();
+        String query = "select * from provinces";
+        ResultSet rs = null;
+        try {
+            rs = cnn.runQuery(query);
+            while (rs.next()) {
+                ProvinceModel pm = new ProvinceModel();
+                pm.name = rs.getString("name");
+                pm.province_id = rs.getInt("id");
+                pm.add();
+            }
+            rs.close();
+        } // Now do something with the ResultSet ....
+        catch (SQLException ex) {
+            // handle any errors
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
+    }
+
 }

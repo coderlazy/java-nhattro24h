@@ -56,7 +56,7 @@ public class Connector {
         return connector;
     }
 
-    public LocationData runQuery(String query, String column1, String column2) {
+    public LocationData runQueryLoadLocation(String query, String column1, String column2) {
         Statement stmt = null;
         ResultSet rs = null;
         LocationData locationData = null;
@@ -102,7 +102,22 @@ public class Connector {
         }
         return locationData;
     }
-
+    public ResultSet runQuery(String query){
+        ResultSet rs = null;
+        Statement stmt = null;
+        try {
+            stmt = this.connection.createStatement();
+            if (stmt.execute(query)) {
+                rs = stmt.getResultSet();
+                return rs;
+            }
+        } catch (SQLException ex) {
+            System.out.println("SQLException: " + ex.getMessage());
+            System.out.println("SQLState: " + ex.getSQLState());
+            System.out.println("VendorError: " + ex.getErrorCode());
+        }
+        return rs;
+    }
     public Connection getConnection() {
         return connection;
     }

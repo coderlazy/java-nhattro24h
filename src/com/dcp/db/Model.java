@@ -5,6 +5,7 @@
  */
 package com.dcp.db;
 
+import com.mongodb.DB;
 import com.mongodb.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
@@ -17,12 +18,26 @@ import org.bson.Document;
 abstract class Model {
 
     public String collectionName;
-    public Model(String collectionName){
+
+    public Model(String collectionName) {
         this.collectionName = collectionName;
     }
-    public MongoCollection<Document> createCollecton() {
+
+    public MongoCollection<Document> createCollection() {
         MongoConector mConnector = new MongoConector();
         MongoCollection<Document> collection = mConnector.getDatabase().getCollection(collectionName);
         return collection;
+    }
+
+    public MongoCollection<Document> getCollection() {
+        MongoConector mConnector = new MongoConector();
+        MongoCollection<Document> collection = mConnector.getDatabase().getCollection(collectionName);
+        return collection;
+    }
+
+    public MongoDatabase getDatabase() {
+        MongoConector mConnector = new MongoConector();
+        MongoDatabase db = mConnector.getDatabase();//.getCollection(collectionName);
+        return db;
     }
 }

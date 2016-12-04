@@ -18,7 +18,7 @@ public class RentalHouse extends Model implements ModelTemplate {
 
     public RentalHouse() {
         super("rentalhouses");
-        collection = createCollecton();
+        collection = createCollection();
     }
 
 //    public RentalHouse(){
@@ -57,7 +57,7 @@ public class RentalHouse extends Model implements ModelTemplate {
     }
 
     @Override
-    public void create() {
+    public void add() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

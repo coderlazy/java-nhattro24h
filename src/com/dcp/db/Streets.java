@@ -27,7 +27,7 @@ public class Streets extends LocationData implements Location {
                 + "= `provinces`.`id` left join `streets` on `streets`.`district_id` "
                 + "= `districts`.`id` where `provinces`.`id` "
                 + "= " + idProvince + " and `streets`.`name_search` = \"" + keyWord+"\"";
-        return cnn.runQuery(query, "id", "name");
+        return cnn.runQueryLoadLocation(query, "id", "name");
     }
 
 }

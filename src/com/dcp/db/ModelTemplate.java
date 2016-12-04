@@ -2,7 +2,7 @@ package com.dcp.db;
 
 public interface ModelTemplate {
 
-    void create();
+    void add();
 
     void update();
 
